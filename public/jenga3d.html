@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TELEO — Jenga Carve-Out (3D)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0a0c; overflow: hidden; }
+  canvas { display: block; }
+  .hint {
+    position: fixed; left: 20px; bottom: 18px; z-index: 2;
+    font: 500 11px/1.4 ui-monospace, "SFMono-Regular", Menlo, monospace;
+    letter-spacing: 0.14em; text-transform: uppercase; color: rgba(244,239,230,0.5);
+    pointer-events: none;
+  }
+</style>
+<!-- three.js via import map so the OrbitControls addon resolves -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<!-- GSAP as a global for the slide-out animation -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+<div class="hint">Drag to orbit · scroll to zoom</div>
+<script type="module">
+import * as THREE from 'three'
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+
+/* ------------------------------------------------------------------ constants */
+const L = 3, W = 1, H = 0.6            // one block: length × depth × height (classic 3:1 footprint)
+const LAYERS = 18                      // 18 layers, 3 blocks each
+const GAP = 0.015                      // a hair of air between blocks
+const CARVE_LAYER = 9                  // a middle layer
+const TOWER_H = LAYERS * H
+
+/* ------------------------------------------------------------------ renderer */
+const renderer = new THREE.WebGLRenderer({ antialias: true })
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2))
+renderer.setSize(innerWidth, innerHeight)
+renderer.shadowMap.enabled = true
+renderer.shadowMap.type = THREE.PCFSoftShadowMap
+renderer.toneMapping = THREE.ACESFilmicToneMapping
+renderer.toneMappingExposure = 1.15
+renderer.outputColorSpace = THREE.SRGBColorSpace
+document.body.appendChild(renderer.domElement)
+
+/* ------------------------------------------------------------------ scene + camera */
+const scene = new THREE.Scene()
+scene.background = new THREE.Color('#0b0d10')
+scene.fog = new THREE.Fog('#0b0d10', 28, 60)
+
+const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 0.1, 200)
+camera.position.set(11, 9, 15)
+
+const controls = new OrbitControls(camera, renderer.domElement)
+controls.enableDamping = true
+controls.dampingFactor = 0.06
+controls.target.set(0, TOWER_H * 0.45, 0)
+controls.minDistance = 8
+controls.maxDistance = 40
+controls.maxPolarAngle = Math.PI * 0.52   // don't let the camera go under the table
+
+/* ------------------------------------------------------------------ lighting */
+scene.add(new THREE.HemisphereLight('#a7c8e0', '#1a1510', 0.55))
+
+const key = new THREE.DirectionalLight('#fff3e0', 2.4)
+key.position.set(9, 18, 8)
+key.castShadow = true
+key.shadow.mapSize.set(2048, 2048)
+key.shadow.camera.near = 1
+key.shadow.camera.far = 60
+key.shadow.camera.left = -14
+key.shadow.camera.right = 14
+key.shadow.camera.top = 20
+key.shadow.camera.bottom = -4
+key.shadow.bias = -0.0004
+key.shadow.radius = 4
+scene.add(key)
+
+const rim = new THREE.DirectionalLight('#9fc0ff', 0.5)
+rim.position.set(-10, 6, -8)
+scene.add(rim)
+
+/* ------------------------------------------------------------------ ground / table */
+const ground = new THREE.Mesh(
+  new THREE.CircleGeometry(40, 64),
+  new THREE.MeshStandardMaterial({ color: '#15171c', roughness: 0.95, metalness: 0 }),
+)
+ground.rotation.x = -Math.PI / 2
+ground.receiveShadow = true
+scene.add(ground)
+
+/* ------------------------------------------------------------------ wood texture (procedural, no external files) */
+function makeWoodTexture(seed = 0) {
+  const s = 256
+  const c = document.createElement('canvas')
+  c.width = c.height = s
+  const ctx = c.getContext('2d')
+  // base tone
+  const tones = ['#caa06a', '#c49a62', '#bd925a', '#d2a972']
+  ctx.fillStyle = tones[seed % tones.length]
+  ctx.fillRect(0, 0, s, s)
+  // long grain streaks
+  for (let i = 0; i < 90; i++) {
+    const y = Math.random() * s
+    ctx.strokeStyle = `rgba(${90 + Math.random() * 40}, ${60 + Math.random() * 30}, ${30 + Math.random() * 20}, ${0.05 + Math.random() * 0.12})`
+    ctx.lineWidth = 0.5 + Math.random() * 1.5
+    ctx.beginPath()
+    ctx.moveTo(0, y)
+    ctx.bezierCurveTo(s * 0.33, y + (Math.random() - 0.5) * 6, s * 0.66, y + (Math.random() - 0.5) * 6, s, y + (Math.random() - 0.5) * 4)
+    ctx.stroke()
+  }
+  // fine speckle
+  for (let i = 0; i < 1400; i++) {
+    ctx.fillStyle = `rgba(60,40,20,${Math.random() * 0.06})`
+    ctx.fillRect(Math.random() * s, Math.random() * s, 1, 1)
+  }
+  const tex = new THREE.CanvasTexture(c)
+  tex.colorSpace = THREE.SRGBColorSpace
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping
+  return tex
+}
+const woodTextures = Array.from({ length: 4 }, (_, i) => makeWoodTexture(i))
+
+function woodMaterial(i) {
+  return new THREE.MeshStandardMaterial({
+    map: woodTextures[i % woodTextures.length],
+    roughness: 0.72,
+    metalness: 0.02,
+  })
+}
+
+/* ------------------------------------------------------------------ the tower */
+const geo = new THREE.BoxGeometry(L - GAP, H - GAP, W - GAP)
+let carveBlock = null
+let carveAxis = 'x'
+
+const tower = new THREE.Group()
+for (let layer = 0; layer < LAYERS; layer++) {
+  const y = H / 2 + layer * H
+  const alongX = layer % 2 === 0            // even layers run along X, odd along Z
+  for (let b = -1; b <= 1; b++) {
+    const mesh = new THREE.Mesh(geo, woodMaterial(layer * 3 + b + 1))
+    mesh.castShadow = true
+    mesh.receiveShadow = true
+    if (alongX) {
+      mesh.position.set(0, y, b * W)       // three blocks spread along Z
+    } else {
+      mesh.rotation.y = Math.PI / 2
+      mesh.position.set(b * W, y, 0)       // three blocks spread along X
+    }
+    tower.add(mesh)
+    // remember the middle block of the carve layer
+    if (layer === CARVE_LAYER && b === 0) {
+      carveBlock = mesh
+      carveAxis = alongX ? 'x' : 'z'        // it slides out along its own length
+    }
+  }
+}
+scene.add(tower)
+
+/* ------------------------------------------------------------------ the carve-out: slight lift + smooth slide, looping */
+const home = { x: carveBlock.position.x, y: carveBlock.position.y, z: carveBlock.position.z }
+const homeRotY = carveBlock.rotation.y
+const OUT = 5.5
+gsap.timeline({ repeat: -1, repeatDelay: 1.1, delay: 0.8 })
+  .to(carveBlock.position, { y: home.y + 0.22, duration: 0.45, ease: 'power2.out' })                 // slight lift
+  .to(carveBlock.position, { [carveAxis]: home[carveAxis] + OUT, duration: 1.5, ease: 'power3.inOut' }, '<0.1') // slide out
+  .to(carveBlock.rotation, { y: homeRotY + 0.06, duration: 1.5, ease: 'power3.inOut' }, '<')         // a touch of life
+  .to({}, { duration: 1.2 })                                                                         // hold, carved out
+  .to(carveBlock.position, { [carveAxis]: home[carveAxis], duration: 1.3, ease: 'power3.inOut' })    // slide back
+  .to(carveBlock.rotation, { y: homeRotY, duration: 1.3, ease: 'power3.inOut' }, '<')
+  .to(carveBlock.position, { y: home.y, duration: 0.4, ease: 'power2.in' })                          // settle
+
+/* ------------------------------------------------------------------ resize + loop */
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight
+  camera.updateProjectionMatrix()
+  renderer.setSize(innerWidth, innerHeight)
+})
+
+renderer.setAnimationLoop(() => {
+  controls.update()
+  renderer.render(scene, camera)
+})
+</script>
+</body>
+</html>
