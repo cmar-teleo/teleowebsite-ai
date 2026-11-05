@@ -1,14 +1,19 @@
-// A realistic 3D Jenga tower (Three.js) whose middle block carves out on demand.
-// Transparent canvas + shadow-catcher so it floats over the page; scroll drives
-// the carve via setCarve(0..1). No physics — the tower is static.
+// Modular layered structure (Three.js) representing a carve-out.
+// One clean module extracts from the larger system on scroll.
+// Transparent canvas + shadow-catcher; scroll drives the extraction via setCarve(0..1).
+// No physics — the remaining structure stays fully static.
 import * as THREE from 'three'
 
-const L = 3, W = 1, H = 0.6
-const LAYERS = 18
-const GAP = 0.015
-const CARVE_LAYER = 8 // an even layer: its blocks run along X, so the middle one slides out along X
-const TOWER_H = LAYERS * H
-const OUT = 5.5
+const MODULE_W = 1.15
+const MODULE_D = 1.15
+const MODULE_H = 0.42
+const GAP = 0.045
+const LAYERS = 11
+const MODULES_PER_LAYER = 5
+const CARVE_LAYER = 5
+const CARVE_INDEX = 2 // middle module of the carve layer
+const STRUCTURE_H = LAYERS * (MODULE_H + GAP) - GAP
+const OUT = 4.8
 
 const clamp01 = (v: number) => Math.max(0, Math.min(1, v))
 const smooth = (a: number, b: number, v: number) => {
@@ -16,44 +21,14 @@ const smooth = (a: number, b: number, v: number) => {
   return t * t * (3 - 2 * t)
 }
 
-/** procedural wood grain, so there are no external texture files */
-function makeWoodTexture(seed = 0) {
-  const s = 256
-  const c = document.createElement('canvas')
-  c.width = c.height = s
-  const ctx = c.getContext('2d')!
-  const tones = ['#caa06a', '#c49a62', '#bd925a', '#d2a972']
-  ctx.fillStyle = tones[seed % tones.length]
-  ctx.fillRect(0, 0, s, s)
-  for (let i = 0; i < 90; i++) {
-    const y = Math.random() * s
-    ctx.strokeStyle = `rgba(${90 + Math.random() * 40}, ${60 + Math.random() * 30}, ${30 + Math.random() * 20}, ${0.05 + Math.random() * 0.12})`
-    ctx.lineWidth = 0.5 + Math.random() * 1.5
-    ctx.beginPath()
-    ctx.moveTo(0, y)
-    ctx.bezierCurveTo(s * 0.33, y + (Math.random() - 0.5) * 6, s * 0.66, y + (Math.random() - 0.5) * 6, s, y + (Math.random() - 0.5) * 4)
-    ctx.stroke()
-  }
-  for (let i = 0; i < 1400; i++) {
-    ctx.fillStyle = `rgba(60,40,20,${Math.random() * 0.06})`
-    ctx.fillRect(Math.random() * s, Math.random() * s, 1, 1)
-  }
-  const tex = new THREE.CanvasTexture(c)
-  tex.colorSpace = THREE.SRGBColorSpace
-  return tex
-}
-
 export class JengaTower {
   private renderer: THREE.WebGLRenderer
   private scene = new THREE.Scene()
   private camera: THREE.PerspectiveCamera
-  private carveBlock!: THREE.Mesh
-  private carveAxis: 'x' | 'z' = 'x'
+  private carveModule!: THREE.Mesh
   private home = { x: 0, y: 0, z: 0 }
-  private homeRotY = 0
-  private woods: THREE.Texture[]
   private spin = 0
-  idle = true // slow camera drift; turn off for reduced motion
+  idle = true
 
   constructor(canvas: HTMLCanvasElement) {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
@@ -61,81 +36,102 @@ export class JengaTower {
     this.renderer.shadowMap.enabled = true
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping
-    this.renderer.toneMappingExposure = 1.18
+    this.renderer.toneMappingExposure = 1.15
     this.renderer.outputColorSpace = THREE.SRGBColorSpace
 
-    this.camera = new THREE.PerspectiveCamera(40, 1, 0.1, 200)
-    this.camera.position.set(9.5, 8.5, 13)
-    this.camera.lookAt(0, TOWER_H * 0.46, 0)
+    this.camera = new THREE.PerspectiveCamera(38, 1, 0.1, 200)
+    this.camera.position.set(8.2, 6.4, 11.5)
+    this.camera.lookAt(0, STRUCTURE_H * 0.42, 0)
 
-    // lighting
-    this.scene.add(new THREE.HemisphereLight('#a7c8e0', '#1a1510', 0.55))
-    const key = new THREE.DirectionalLight('#fff3e0', 2.5)
-    key.position.set(9, 18, 8)
+    // Lighting — cooler, more architectural
+    this.scene.add(new THREE.HemisphereLight('#c5d4e8', '#1a1c20', 0.6))
+    const key = new THREE.DirectionalLight('#f4efe6', 2.2)
+    key.position.set(7, 14, 6)
     key.castShadow = true
     key.shadow.mapSize.set(2048, 2048)
     key.shadow.camera.near = 1
-    key.shadow.camera.far = 60
-    Object.assign(key.shadow.camera, { left: -14, right: 14, top: 22, bottom: -4 })
-    key.shadow.bias = -0.0004
-    key.shadow.radius = 4
+    key.shadow.camera.far = 50
+    Object.assign(key.shadow.camera, { left: -12, right: 12, top: 16, bottom: -3 })
+    key.shadow.bias = -0.0003
+    key.shadow.radius = 3
     this.scene.add(key)
-    const rim = new THREE.DirectionalLight('#9fc0ff', 0.5)
-    rim.position.set(-10, 6, -8)
+    const rim = new THREE.DirectionalLight('#9eb8d8', 0.45)
+    rim.position.set(-8, 5, -6)
     this.scene.add(rim)
 
-    // shadow catcher (transparent) so the tower casts a soft shadow onto the page
+    // Shadow catcher
     const ground = new THREE.Mesh(
-      new THREE.PlaneGeometry(120, 120),
-      new THREE.ShadowMaterial({ opacity: 0.34 }),
+      new THREE.PlaneGeometry(100, 100),
+      new THREE.ShadowMaterial({ opacity: 0.28 }),
     )
     ground.rotation.x = -Math.PI / 2
     ground.receiveShadow = true
     this.scene.add(ground)
 
-    this.woods = Array.from({ length: 4 }, (_, i) => makeWoodTexture(i))
-    this.buildTower()
-
+    this.buildStructure()
     this.renderer.setAnimationLoop(() => this.render())
   }
 
-  private buildTower() {
-    const geo = new THREE.BoxGeometry(L - GAP, H - GAP, W - GAP)
-    const tower = new THREE.Group()
+  private buildStructure() {
+    const geo = new THREE.BoxGeometry(MODULE_W, MODULE_H, MODULE_D)
+    const group = new THREE.Group()
+
+    // Base material for the larger system
+    const baseMat = new THREE.MeshStandardMaterial({
+      color: '#2a333c',
+      roughness: 0.65,
+      metalness: 0.08,
+    })
+
+    // Accent material for the module being carved out
+    const carveMat = new THREE.MeshStandardMaterial({
+      color: '#e8903e',
+      roughness: 0.45,
+      metalness: 0.12,
+    })
+
+    const step = MODULE_W + GAP
+    const startX = -((MODULES_PER_LAYER - 1) * step) / 2
+
     for (let layer = 0; layer < LAYERS; layer++) {
-      const y = H / 2 + layer * H
-      const alongX = layer % 2 === 0
-      for (let b = -1; b <= 1; b++) {
-        const mat = new THREE.MeshStandardMaterial({ map: this.woods[(layer * 3 + b + 1) % this.woods.length], roughness: 0.72, metalness: 0.02 })
+      const y = MODULE_H / 2 + layer * (MODULE_H + GAP)
+      for (let i = 0; i < MODULES_PER_LAYER; i++) {
+        const isCarve = layer === CARVE_LAYER && i === CARVE_INDEX
+        const mat = isCarve ? carveMat : baseMat
         const mesh = new THREE.Mesh(geo, mat)
         mesh.castShadow = true
         mesh.receiveShadow = true
-        if (alongX) mesh.position.set(0, y, b * W)
-        else {
-          mesh.rotation.y = Math.PI / 2
-          mesh.position.set(b * W, y, 0)
-        }
-        tower.add(mesh)
-        if (layer === CARVE_LAYER && b === 0) {
-          this.carveBlock = mesh
-          this.carveAxis = alongX ? 'x' : 'z'
+
+        const x = startX + i * step
+        // Subtle alternating offset for visual interest without looking like Jenga
+        const zOffset = (layer % 2 === 0 ? 0 : 0.18)
+        mesh.position.set(x, y, zOffset)
+
+        group.add(mesh)
+        if (isCarve) {
+          this.carveModule = mesh
         }
       }
     }
-    this.scene.add(tower)
-    this.home = { x: this.carveBlock.position.x, y: this.carveBlock.position.y, z: this.carveBlock.position.z }
-    this.homeRotY = this.carveBlock.rotation.y
+
+    this.scene.add(group)
+    this.home = {
+      x: this.carveModule.position.x,
+      y: this.carveModule.position.y,
+      z: this.carveModule.position.z,
+    }
   }
 
-  /** t: 0 = block seated in the tower, 1 = fully carved out */
+  /** t: 0 = module seated in the structure, 1 = fully extracted */
   setCarve(t: number) {
     t = clamp01(t)
-    const lift = smooth(0, 0.2, t) * 0.22
-    const slide = smooth(0.08, 1, t) * OUT
-    const rot = smooth(0.08, 1, t) * 0.06
-    this.carveBlock.position[this.carveAxis] = this.home[this.carveAxis] + slide
-    this.carveBlock.position.y = this.home.y + lift
-    this.carveBlock.rotation.y = this.homeRotY + rot
+    const lift = smooth(0, 0.18, t) * 0.28
+    const slide = smooth(0.06, 1, t) * OUT
+    const separation = smooth(0.1, 0.7, t) * 0.12
+
+    this.carveModule.position.x = this.home.x + slide
+    this.carveModule.position.y = this.home.y + lift
+    this.carveModule.position.z = this.home.z + separation
   }
 
   resize(w: number, h: number) {
@@ -146,13 +142,12 @@ export class JengaTower {
 
   private render() {
     if (this.idle) {
-      // a very slow idle drift so it feels alive without full orbit controls
-      this.spin += 0.0012
-      const r = 16.3
+      this.spin += 0.0009
+      const r = 13.8
       this.camera.position.x = Math.sin(this.spin) * r
       this.camera.position.z = Math.cos(this.spin) * r
-      this.camera.position.y = 8.5
-      this.camera.lookAt(0, TOWER_H * 0.46, 0)
+      this.camera.position.y = 6.4
+      this.camera.lookAt(0, STRUCTURE_H * 0.42, 0)
     }
     this.renderer.render(this.scene, this.camera)
   }
