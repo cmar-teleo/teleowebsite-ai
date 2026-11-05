@@ -36,7 +36,7 @@ export default function SignalHero() {
   const reduced = usePrefersReducedMotion()
   const [ready, setReady] = useState(false)
 
-  /* ------------------------------------------------ mount the 3D tower */
+  /* ------------------------------------------------ mount the 3D structure */
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -89,12 +89,12 @@ export default function SignalHero() {
 
       const tl = gsap.timeline({ paused: true, defaults: { ease: 'none' } })
       tl.to('.sg-head, .sg-sub, .sg-dock', { opacity: 0, y: -20, duration: 0.05, stagger: 0.012 }, 0.04)
-        // backgrounds wash in behind the tower: era photo → office → boardroom in focus
+        // backgrounds wash in behind the structure: era photo → office → boardroom in focus
         .to('.sg-bg--meadow', { opacity: 1, duration: 0.1 }, 0.18)
         .to('.sg-bg--wblur', { opacity: 1, duration: 0.1 }, 0.48)
         .to('.sg-bg--window', { opacity: 1, duration: 0.14 }, 0.74)
         .fromTo('.sg-bg', { scale: 1.08 }, { scale: 1, duration: 1 }, 0)
-        // the carved block has slid out by now; fade the 3D tower as TELEO resolves
+        // the module has extracted by now; fade the 3D structure as TELEO resolves
         .to('.sg-fig3d', { opacity: 0, duration: 0.12 }, 0.58)
         .fromTo('.sg-word', { opacity: 0, scale: 0.9, y: 12 }, { opacity: 1, scale: 1, y: 0, duration: 0.1, ease: 'power2.out' }, 0.62)
         // chapter captions
@@ -114,7 +114,7 @@ export default function SignalHero() {
         scrub: reduced ? false : 0.7,
         onUpdate(self) {
           progressRef.current = self.progress
-          // scroll drives the carve-out: the block slides out between 15% and 50%
+          // scroll drives the carve-out: the module extracts between 15% and 50%
           towerRef.current?.setCarve(clamp01((self.progress - 0.15) / 0.35))
           if (!reduced) return
           const p = self.progress > 0.85 ? 1 : self.progress > 0.55 ? STOPS[2] : self.progress > 0.2 ? STOPS[1] : 0
@@ -154,12 +154,12 @@ export default function SignalHero() {
           </div>
           <div className="sg-shade" aria-hidden="true" />
 
-          {/* the 3D Jenga tower lives on the right; the middle block carves out on scroll */}
+          {/* modular structure on the right; one module extracts cleanly on scroll */}
           <canvas
             ref={canvasRef}
             className="sg-fig3d"
             role="img"
-            aria-label="A wooden Jenga tower; its middle block slides out as you scroll, then the tower resolves into the word TELEO"
+            aria-label="A modular structure of interlocking units; one highlighted module extracts cleanly as you scroll, then the structure resolves into the word TELEO"
           />
           <div className="sg-word" aria-hidden="true"><span className="sg-word__mark" />TELEO</div>
 
@@ -167,7 +167,7 @@ export default function SignalHero() {
 
           <header className="sg-top">
             <span>TELEO Capital</span>
-            <span className="sg-top__c">Operators <em>&amp;</em> Capital</span>
+            <span className="sg-top__c">Operators <em>&</em> Capital</span>
             <span className="sg-top__r">Private Equity</span>
           </header>
 
