@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
-/** Per-page SEO + Open Graph. `og` is the file name (without .png) in public/og. */
+/** Per-page SEO + Open Graph. `og` is the file name (without .jpg) in public/og. */
 export function meta(title: string, description: string, path: string, og: string): Metadata {
-  const image = { url: `/og/${og}.png`, width: 1200, height: 630, alt: `${title} | TELEO Capital` }
+  const image = { url: `/og/${og}.jpg`, width: 1200, height: 630, alt: `${title} | TELEO Capital` }
   return {
     title,
     description,

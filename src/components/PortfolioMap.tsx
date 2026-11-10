@@ -54,14 +54,14 @@ export default function PortfolioMap() {
                   const ax = x(a.year) + (adds.filter((b, j) => j < k && b.year === a.year).length + (a.year === p.year ? 1 : 0)) * 14
                   return (
                     <g key={a.slug}>
-                      <circle cx={ax} cy={y} r="4.5" fill="var(--color-midnight)" stroke="var(--color-aegean)" strokeWidth="1.2" />
+                      <circle cx={ax} cy={y} r="4.5" fill="var(--color-midnight)" stroke="var(--color-marble)" strokeWidth="1.2" />
                       <text x={ax} y={y - 9} textAnchor="middle" fill="var(--color-vein)" fontSize="8" letterSpacing="1" fontFamily="var(--font-mono)" className="opacity-0 transition-opacity duration-300 group-hover/row:opacity-100 group-focus-visible/row:opacity-100">
                         {a.name.toUpperCase()}
                       </text>
                     </g>
                   )
                 })}
-                {active && <circle cx={RIGHT} cy={y} r="2.2" fill="var(--color-aegean)" />}
+                {active && <circle cx={RIGHT} cy={y} r="2.2" fill="var(--color-marble)" />}
               </a>
             )
           })}
@@ -72,7 +72,7 @@ export default function PortfolioMap() {
           <span className="inline-block h-3 w-2 border border-bronze-hi" /> Platform, at year of investment
         </span>
         <span className="flex items-center gap-2">
-          <span className="inline-block h-2.5 w-2.5 rounded-full border border-aegean" /> Add-on
+          <span className="inline-block h-2.5 w-2.5 rounded-full border border-marble" /> Add-on
         </span>
         <span className="flex items-center gap-2">
           <span className="inline-block h-px w-6 bg-bronze" /> Active

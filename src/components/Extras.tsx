@@ -4,6 +4,17 @@ import Arrow from './Arrow'
 
 const d = (n: number) => ({ '--d': n }) as CSSProperties
 
+/**
+ * Legal footnote. Verbatim: do not rewrite, shorten or drop.
+ * It sits directly under any performance claim (revenue, Rule of 40 / 70, EBITDA multiple, realization).
+ */
+export const CASE_STUDY_FOOTNOTE =
+  "Past performance is not indicative of future results. This case study is provided for illustrative purposes only and does not represent all investments made by TELEO Capital; it may not be representative of the firm's overall portfolio or results, and a complete list of investments is available upon request. There can be no assurance that future investments will achieve comparable results or be profitable. Nothing herein constitutes an offer to sell or a solicitation of an offer to buy any security."
+
+export function CaseFootnote({ className = '' }: { className?: string }) {
+  return <p className={`legal-note ${className}`}>{CASE_STUDY_FOOTNOTE}</p>
+}
+
 /** Organizations the team supports. `full` adds each description (Responsibility page). */
 export function CommunityList({ full = false }: { full?: boolean }) {
   return (
@@ -45,9 +56,9 @@ export function TsaCompare() {
             <div>
               <dt className="flex items-baseline justify-between gap-4 text-vein">
                 <span>TELEO-led TSA</span>
-                <span className="font-serif text-xl text-aegean">Short &amp; clean</span>
+                <span className="font-serif text-xl text-marble">Short &amp; clean</span>
               </dt>
-              <dd className="mt-3 h-1.5 w-1/4 bg-aegean shadow-[0_0_12px_var(--color-aegean)]" aria-hidden="true" />
+              <dd className="mt-3 h-1.5 w-1/4 bg-orange" aria-hidden="true" />
             </div>
           </dl>
           <p className="muted mt-8 max-w-2xl text-sm">Because separation begins during exclusivity, day-one readiness is largely complete at signing.</p>
@@ -65,13 +76,13 @@ export function ThreePs() {
         {[130, 95, 60].map((r, i) => (
           <path key={r} d={`M${150 - r} 150A${r} ${r} 0 0 1 ${150 + r} 150`} stroke="var(--color-bronze)" strokeOpacity={0.3 + i * 0.2} />
         ))}
-        <circle cx="150" cy="150" r="5" fill="var(--color-aegean)" />
+        <circle cx="150" cy="150" r="5" fill="var(--color-marble)" />
         {[
           [58, 58],
           [150, 55],
           [208, 134],
         ].map(([x, y], i) => (
-          <circle key={i} cx={x} cy={y} r="4" fill="var(--color-midnight)" stroke="var(--color-aegean)" />
+          <circle key={i} cx={x} cy={y} r="4" fill="var(--color-midnight)" stroke="var(--color-marble)" />
         ))}
       </svg>
     </div>

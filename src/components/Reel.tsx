@@ -54,7 +54,7 @@ export default function Reel({ children, header, count }: { children: ReactNode;
           <div className="hidden items-center gap-4 font-mono text-[0.68rem] tracking-[0.2em] text-vein group-data-[live=true]/reel:flex" aria-hidden="true">
             <span>01</span>
             <span className="relative h-px w-24 bg-marble/15">
-              <span ref={bar} className="absolute inset-0 origin-left scale-x-0 bg-aegean" />
+              <span ref={bar} className="absolute inset-0 origin-left scale-x-0 bg-orange" />
             </span>
             <span>{String(count).padStart(2, '0')}</span>
           </div>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { CSSProperties } from 'react'
 import PageHero from '@/components/PageHero'
 import Arrow from '@/components/Arrow'
+import { CaseFootnote } from '@/components/Extras'
 import Metope from '@/components/visuals/Metope'
 import { MetopeSvg } from '@/components/visuals/metopes'
 import { caseStudies, pages } from '@/lib/content'
@@ -32,6 +33,7 @@ export default function CaseStudies() {
                   <h2 className="mt-4 font-serif text-[clamp(2.4rem,4vw,3.6rem)] leading-none">{c.name}</h2>
                   <p className="mt-2 text-vein">{c.sector}</p>
                   <p className="lede mt-6 max-w-xl">{c.card}</p>
+                  <CaseFootnote className="mt-3 max-w-xl" />
                   <p className="mt-auto pt-10">
                     <span className="link-arrow">
                       Read the case study <Arrow />
