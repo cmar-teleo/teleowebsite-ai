@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { CSSProperties } from 'react'
 import Arrow from '@/components/Arrow'
+import { CaseFootnote } from '@/components/Extras'
 import Metope from '@/components/visuals/Metope'
 import { MetopeSvg } from '@/components/visuals/metopes'
 import { caseStudies } from '@/lib/content'
@@ -79,6 +80,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               <p className="lede mt-7 max-w-xl" data-reveal>
                 {c.card}
               </p>
+              <CaseFootnote className="mt-4 max-w-xl" />
             </div>
             <div className="lg:col-span-6" data-pushin>
               <Metope className="border border-marble/10 bg-obsidian/50 p-5 md:p-8">
@@ -133,6 +135,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <div className="mt-12">
           <Pairs items={c.results} />
         </div>
+        <CaseFootnote className="mt-8" />
       </Row>
 
       <section className="border-t border-marble/10 py-12">

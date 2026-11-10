@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Arrow from '@/components/Arrow'
+import { CaseFootnote } from '@/components/Extras'
 import Metope from '@/components/visuals/Metope'
 import { MetopeSvg } from '@/components/visuals/metopes'
 import { addOnsOf, company, portfolio, visualSlug, visualVariant } from '@/lib/content'
@@ -78,6 +79,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
             <p className="mt-6 font-serif text-[clamp(1.5rem,2.3vw,2.1rem)] leading-[1.3]" data-reveal>
               {c.summary}
             </p>
+            {c.status === 'Realized' && <CaseFootnote className="mt-5" />}
 
             {(parent || addOns.length > 0) && (
               <div className="mt-14" data-reveal>

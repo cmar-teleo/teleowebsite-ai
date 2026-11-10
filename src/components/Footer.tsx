@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { firm } from '@/lib/content'
-import Wordmark from './Wordmark'
+import Logo from './Logo'
 import Arrow from './Arrow'
 
 const DISCLAIMER =
@@ -9,13 +9,13 @@ const DISCLAIMER =
 export default function Footer() {
   return (
     <footer className="relative mt-24 border-t border-marble/10 bg-obsidian/40">
-      <div className="meander opacity-50" aria-hidden="true" />
+      <div className="meander opacity-90" aria-hidden="true" />
       <div className="wrap py-20">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end" data-reveal>
           <p className="h2 max-w-3xl">
-            Empowering businesses to <em className="text-bronze-hi">perform and execute.</em>
+            Empowering businesses to <em>perform and execute.</em>
           </p>
-          <Link href="/contact" className="btn btn--bronze shrink-0">
+          <Link href="/contact" className="btn btn--primary shrink-0">
             Get in Touch <Arrow />
           </Link>
         </div>
@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Wordmark />
+            <span className="inline-block bg-white px-4 py-3"><Logo height={56} /></span>
             <div className="mt-6">
               <a href={firm.linkedin} target="_blank" rel="noopener noreferrer" className="link-arrow">
                 LinkedIn

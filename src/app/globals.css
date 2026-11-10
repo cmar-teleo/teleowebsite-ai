@@ -2,15 +2,15 @@
 
 /* ------------------------------------------------------------------ tokens */
 @theme {
-  --color-midnight: #07090d;
-  --color-obsidian: #10141b;
-  --color-slate: #1a2029;
+  --color-midnight: #0e0c0a;
+  --color-obsidian: #18140f;
+  --color-slate: #241e17;
   --color-marble: #ede6da;
   --color-vein: #a39d92;
-  --color-bronze: #b8864b;
-  --color-bronze-hi: #d9a868;
-  --color-aegean: #4fd8ff;
-
+  --color-bronze: #cfc4ae; /* stone neutral for hairlines; the brand accent is orange */
+  --color-bronze-hi: #ede6da;
+  --color-orange: #f96015; /* TELEO orange: active underline, a rare rule, the primary button */
+  
   --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
@@ -20,10 +20,10 @@
 
 :root {
   --scroll: 0; /* 0..1 page progress, written by SmoothScroll */
-  --bronze: #b8864b;
-  --aegean: #4fd8ff;
+  --bronze: #b9b0a0;
+  --aegean: #f1ead9;
   --marble: #ede6da;
-  --nav-h: 4.25rem;
+  --nav-h: 4.5rem;
 }
 
 html {
@@ -39,8 +39,8 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
 }
-::selection { background: var(--color-bronze); color: var(--color-midnight); }
-:focus-visible { outline: 2px solid var(--color-aegean); outline-offset: 3px; border-radius: 2px; }
+::selection { background: var(--color-orange); color: #1c1a17; }
+:focus-visible { outline: 2px solid var(--color-orange); outline-offset: 3px; border-radius: 2px; }
 
 /* Lenis */
 html.lenis, html.lenis body { height: auto; }
@@ -125,9 +125,14 @@ html.lenis, html.lenis body { height: auto; }
 }
 .btn:hover, .btn:focus-visible { color: var(--color-midnight); border-color: var(--color-marble); }
 .btn:hover::before, .btn:focus-visible::before { transform: translateY(0); }
-.btn--bronze { border-color: var(--color-bronze); background: var(--color-bronze); color: var(--color-midnight); }
-.btn--bronze::before { background: var(--color-bronze-hi); }
-.btn--bronze:hover { border-color: var(--color-bronze-hi); }
+.btn--primary { border-color: var(--color-orange); background: var(--color-orange); color: #1c1a17; }
+.btn--primary::before { background: #ffffff; }
+.btn--primary:hover, .btn--primary:focus-visible { border-color: #ffffff; color: #1c1a17; }
+/* on the light nav bar */
+.nav-light .btn--primary::before { background: #1c1a17; }
+.nav-light .btn--primary:hover, .nav-light .btn--primary:focus-visible { border-color: #1c1a17; color: #ffffff; }
+.nav-light .nav-link { color: #1c1a17; }
+.nav-light .nav-link:hover, .nav-light .nav-link[aria-current='page'] { color: #1c1a17; }
 .btn .arr { transition: transform 0.5s var(--ease-film); }
 .btn:hover .arr { transform: translateX(4px); }
 
@@ -163,7 +168,7 @@ a:hover > .link-arrow, a:focus-visible > .link-arrow, a.link-arrow:hover, a.link
   position: absolute;
   left: 0; right: 0; top: -1px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-bronze-hi), transparent);
+  background: linear-gradient(90deg, transparent, var(--color-marble), transparent);
   transform: scaleX(0);
   transition: transform 0.9s var(--ease-film);
 }
@@ -195,25 +200,19 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 .vignette {
-  background: radial-gradient(120% 90% at 50% 40%, transparent 40%, rgba(7, 9, 13, 0.75) 100%);
+  background: radial-gradient(120% 90% at 50% 40%, transparent 40%, rgba(14, 12, 10, 0.75) 100%);
 }
 
 /* ------------------------------------------------------------------ meander (Greek key) */
 .meander {
-  --u: 4px;
-  height: calc(var(--u) * 5);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20'%3E%3Cpath d='M0 18H22V2H6V12H14V8' fill='none' stroke='%23b8864b' stroke-width='1.6'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-size: 24px 20px;
-}
-.meander--live {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20'%3E%3Cpath d='M0 18H22V2H6V12H14V8' fill='none' stroke='%234fd8ff' stroke-width='1.6'/%3E%3C/svg%3E");
+  height: 28px;
+  background: url('/plates/meander.webp') repeat-x left center / 240px 28px;
 }
 
 /* ------------------------------------------------------------------ site arc: completes with page scroll */
-.site-arc circle.arc-live {
-  stroke-dasharray: 1;
-  stroke-dashoffset: calc(1 - var(--scroll));
+.site-arc .arc-paint {
+  -webkit-mask-image: conic-gradient(from 0deg, #000 calc(var(--scroll) * 100%), transparent calc(var(--scroll) * 100% + 0.5%));
+  mask-image: conic-gradient(from 0deg, #000 calc(var(--scroll) * 100%), transparent calc(var(--scroll) * 100% + 0.5%));
 }
 
 /* ------------------------------------------------------------------ metope (portfolio visuals) */
@@ -223,7 +222,7 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
 .metope .l-mid { transform: translate3d(calc(var(--tx) * 4px), calc(var(--ty) * 4px), 0); }
 .metope .l-front { transform: translate3d(calc(var(--tx) * 12px), calc(var(--ty) * 12px), 0); }
 .metope .l-back, .metope .l-mid, .metope .l-front { transition: transform 0.5s var(--ease-film); }
-.metope .glow { filter: drop-shadow(0 0 4px var(--aegean)); }
+.metope .glow { filter: none; }
 .metope .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 3.2s var(--ease-film) forwards; animation-delay: calc(var(--i, 0) * 180ms + 200ms); }
 .metope .spin { transform-box: fill-box; transform-origin: center; animation: spin var(--t, 24s) linear infinite; }
 .metope .spin-r { transform-box: fill-box; transform-origin: center; animation: spin var(--t, 24s) linear infinite reverse; }
@@ -243,8 +242,8 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
   content: '';
   position: absolute;
   left: 0; right: 0; bottom: -2px;
-  height: 1px;
-  background: var(--color-bronze-hi);
+  height: 2px;
+  background: var(--color-orange);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s var(--ease-film);
@@ -280,7 +279,7 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
   transition: border-color 0.4s;
 }
 .field select option { background: var(--color-obsidian); color: var(--color-marble); }
-.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--color-aegean); }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-bottom-color: var(--color-orange); }
 .field textarea { min-height: 7rem; resize: vertical; }
 
 /* ------------------------------------------------------------------ reduced motion: calm, static, still premium */
@@ -290,10 +289,13 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
   .metope .draw { stroke-dashoffset: 0; animation: none; }
   .metope .ring { opacity: 0.5; transform: scale(0.7); }
   .metope .l-back, .metope .l-mid, .metope .l-front { transform: none !important; }
-  .site-arc circle.arc-live { stroke-dashoffset: 0; }
+  .site-arc .arc-paint { -webkit-mask-image: none; mask-image: none; }
 }
 
 
 /* page hero entrance: pure CSS so the headline paints without waiting for JavaScript */
 .hero-in { animation: hero-in 1.1s var(--ease-film) both; }
 @keyframes hero-in { from { opacity: 0.01; transform: translate3d(0, 22px, 0); } to { opacity: 1; transform: none; } }
+
+.display em, .h2 em { font-style: italic; color: inherit; }
+.legal-note { font-size: 0.8rem; line-height: 1.6; color: var(--color-vein); }

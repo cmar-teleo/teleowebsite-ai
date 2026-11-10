@@ -7,7 +7,8 @@ import Metope from '@/components/visuals/Metope'
 import { MetopeSvg } from '@/components/visuals/metopes'
 import Arrow from '@/components/Arrow'
 import { SectionHead } from '@/components/Sections'
-import { caseStudies, news, pages } from '@/lib/content'
+import { CaseFootnote } from '@/components/Extras'
+import { caseStudies, news, pages, team } from '@/lib/content'
 import { meta } from '@/lib/meta'
 
 export const metadata = {
@@ -17,14 +18,19 @@ export const metadata = {
 
 const d = (n: number) => ({ '--d': n }) as CSSProperties
 const ORDER = ['paxia', 'industrial-defender', 'umt360']
+/** Real portraits shown inside the third scene of the hero film. */
+const FACES = ['George Kase', 'Andres Martinez', 'Robb Warwick', 'Estelle Spanneut']
 
 export default function Home() {
   const why = pages.home.sections[1]
   const studies = ORDER.map((s) => caseStudies.find((c) => c.slug === s)!)
+  const faces = FACES.map((n) => team.find((p) => p.name === n))
+    .filter((p): p is NonNullable<typeof p> => !!p?.photo)
+    .map((p) => ({ name: p.name, role: p.role, photo: p.photo! }))
 
   return (
     <>
-      <HomeHero />
+      <HomeHero faces={faces} />
 
       {/* ---------------------------------------------------------------- why TELEO */}
       <section className="relative py-28 md:py-36">
@@ -69,6 +75,8 @@ export default function Home() {
               <h3 className="mt-4 font-serif text-[clamp(2.2rem,3.4vw,3.2rem)] leading-none">{c.name}</h3>
               <p className="mt-2 text-vein">{c.sector}</p>
               <p className="mt-5 text-marble/80">{c.card}</p>
+              {/* directly under the stated result */}
+              <CaseFootnote className="mt-3" />
               <dl className="mt-7 grid grid-cols-3 gap-4 border-t border-marble/10 pt-5 text-sm">
                 <div>
                   <dt className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-vein">Headquarters</dt>

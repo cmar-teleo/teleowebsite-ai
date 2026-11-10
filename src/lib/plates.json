@@ -1,0 +1,90 @@
+{
+  "world": {
+    "w": 2400,
+    "h": 1200,
+    "floor": 934
+  },
+  "home": {
+    "x": 930,
+    "y": 334
+  },
+  "site": {
+    "x": 1780,
+    "y": 334
+  },
+  "arc": {
+    "cx": 1900,
+    "cy": 560,
+    "r": 430
+  },
+  "column": {
+    "w": 240,
+    "h": 640
+  },
+  "layers": {
+    "wall": {
+      "src": "/plates/wall.webp",
+      "x": 0,
+      "y": 0,
+      "w": 2400,
+      "h": 1200,
+      "opaque": true
+    },
+    "arc": {
+      "src": "/plates/arc.webp",
+      "x": 1430,
+      "y": 90,
+      "w": 940,
+      "h": 940,
+      "opaque": false
+    },
+    "temple": {
+      "src": "/plates/temple.webp",
+      "x": 150,
+      "y": 120,
+      "w": 1360,
+      "h": 900,
+      "opaque": false
+    },
+    "column": {
+      "src": "/plates/column.webp",
+      "x": 0,
+      "y": 0,
+      "w": 240,
+      "h": 640,
+      "opaque": false
+    },
+    "column-sinopia": {
+      "src": "/plates/column-sinopia.webp",
+      "x": 0,
+      "y": 0,
+      "w": 240,
+      "h": 640,
+      "opaque": false
+    },
+    "site-base": {
+      "src": "/plates/site-base.webp",
+      "x": 1610,
+      "y": 914,
+      "w": 580,
+      "h": 110,
+      "opaque": false
+    },
+    "site-temple": {
+      "src": "/plates/site-temple.webp",
+      "x": 1640,
+      "y": 180,
+      "w": 520,
+      "h": 780,
+      "opaque": false
+    },
+    "floor": {
+      "src": "/plates/floor.webp",
+      "x": 0,
+      "y": 1030,
+      "w": 2400,
+      "h": 110,
+      "opaque": false
+    }
+  }
+}

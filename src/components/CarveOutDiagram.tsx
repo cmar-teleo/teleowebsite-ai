@@ -92,10 +92,10 @@ export default function CarveOutDiagram({ phases }: { phases: string[] }) {
         {/* its own ties */}
         {nodes.map((n, i) => (
           <g key={i}>
-            <path className="co-tie-new" d={`M${cx + 35} ${cy - 18 + i * 12}C${cx + 75} ${cy - 18 + i * 12} ${n.x - 50} ${n.y} ${n.x - 8} ${n.y}`} stroke="var(--color-aegean)" pathLength={1} strokeDasharray="1" />
+            <path className="co-tie-new" d={`M${cx + 35} ${cy - 18 + i * 12}C${cx + 75} ${cy - 18 + i * 12} ${n.x - 50} ${n.y} ${n.x - 8} ${n.y}`} stroke="var(--color-marble)" pathLength={1} strokeDasharray="1" />
             <g className="co-node">
-              <circle cx={n.x} cy={n.y} r="6" stroke="var(--color-aegean)" />
-              <circle cx={n.x} cy={n.y} r="2" fill="var(--color-aegean)" />
+              <circle cx={n.x} cy={n.y} r="6" stroke="var(--color-marble)" />
+              <circle cx={n.x} cy={n.y} r="2" fill="var(--color-marble)" />
               <text x={n.x + 16} y={n.y + 4} fill="var(--color-marble)" fontSize="12" letterSpacing="2.5" fontFamily="var(--font-mono)">
                 {TIES[i].toUpperCase()}
               </text>

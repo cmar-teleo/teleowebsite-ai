@@ -50,7 +50,7 @@ export type CaseStudy = {
   results: [string, string][]
   ps: { people: string; product: string; process: string }
 }
-export type Person = { group: string; name: string; role: string; li?: string; bio: string[] }
+export type Person = { group: string; name: string; role: string; li?: string; bio: string[]; photo?: string; bioPhoto?: string }
 export type NewsItem = { date: string; slug: string; cat: string; title: string; summary: string; source?: string; external?: boolean }
 export type Org = { name: string; url: string; desc: string }
 

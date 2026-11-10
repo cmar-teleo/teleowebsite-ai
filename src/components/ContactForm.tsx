@@ -78,7 +78,7 @@ export default function ContactForm({ idPrefix = 'c' }: { idPrefix?: string }) {
       </div>
       <div className="cf-turnstile sm:col-span-2" data-sitekey={TURNSTILE_SITEKEY} data-action="contact" data-theme="dark" />
       <div className="sm:col-span-2">
-        <button type="submit" className="btn btn--bronze" disabled={state === 'sending'}>
+        <button type="submit" className="btn btn--primary" disabled={state === 'sending'}>
           {state === 'sending' ? 'Sending' : 'Submit'} <Arrow />
         </button>
       </div>

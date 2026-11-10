@@ -9,7 +9,7 @@ const d = (n: number) => ({ '--d': n }) as CSSProperties
 const external = (href: string) => /^(https?:|mailto:|tel:)/.test(href)
 
 export function Cta({ href, label, primary = false }: { href: string; label: string; primary?: boolean }) {
-  const cls = `btn ${primary ? 'btn--bronze' : ''}`
+  const cls = `btn ${primary ? 'btn--primary' : ''}`
   const inner = (
     <>
       {label} <Arrow />
@@ -175,7 +175,7 @@ export default function Sections({ sections, motif = 'arc', slots = {}, heroExtr
                 <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-bronze/60 to-transparent" />
                 <div className="absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full border border-bronze/20" data-parallax="0.2" />
                 <div className="absolute left-1/2 top-1/2 h-[44vmin] w-[44vmin] -translate-x-1/2 -translate-y-1/2 rounded-full border border-marble/10" data-parallax="0.45" />
-                <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_50%,rgba(184,134,75,0.10),transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_50%,rgba(237,230,218,0.06),transparent_70%)]" />
               </div>
               <div className="wrap-narrow relative text-center" data-pushin>
                 {s.eyebrow && <p className="eyebrow">{s.eyebrow}</p>}
