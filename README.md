@@ -58,7 +58,7 @@ There are no stock images, photos, textures or 3D model files. Everything visual
 
 ## Motion and performance
 
-- The hero 3D bundle is code-split and requested only after first paint, when the browser is idle. An SVG poster holds the frame until the scene is ready, and the scene stops rendering when it leaves the viewport.
+- The hero 3D bundle is code-split and requested on the visitor's first interaction (scroll, pointer, touch or key), or after nine seconds, never during page load. An SVG poster holds the frame until the scene is ready, and the scene stops rendering when it leaves the viewport.
 - On small or portrait screens the scene uses fewer particles, lower-resolution columns, no antialiasing, a capped pixel ratio and a different camera path.
 - `prefers-reduced-motion`: no smooth scroll, no 3D, no pinning. The hero shows the finished still frame, the three chapters become a plain list, diagrams show their end state and portfolio visuals hold a still frame.
 - Portfolio visuals animate only while on screen.
