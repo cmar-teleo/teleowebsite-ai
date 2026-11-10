@@ -22,8 +22,6 @@ gsap.registerPlugin(ScrollTrigger)
 const L = plates.layers
 const WORLD = plates.world
 
-type Face = { name: string; role: string; photo: string }
-
 const CHAPTERS = [
   { k: 'I', title: 'Inside a larger company', body: 'Strong businesses are often trapped inside bigger ones: non-core divisions, under-managed and starved of capital.' },
   { k: 'II', title: 'The carve-out', body: 'We separate the division from its parent, cleanly and with certainty of close, and stand it up on its own.' },
@@ -66,7 +64,7 @@ const CAM_MOBILE: Key[] = [
 /** How much each layer lags the camera (0 = fixed to the scene, + = farther, - = nearer). */
 const DEPTH = { wall: 0.5, arc: 0.22, temple: 0, column: -0.02, site: 0, floor: -0.28 }
 
-export default function HomeHero({ faces }: { faces: Face[] }) {
+export default function HomeHero() {
   const track = useRef<HTMLElement>(null)
   const stage = useRef<HTMLDivElement>(null)
   const world = useRef<HTMLDivElement>(null)
@@ -291,18 +289,6 @@ export default function HomeHero({ faces }: { faces: Face[] }) {
               ref={setLayer(i + 1)}
               className="max-w-md motion-safe:invisible motion-safe:absolute motion-safe:bottom-[clamp(4.5rem,14vh,9rem)] motion-safe:left-0 motion-safe:opacity-0"
             >
-              {/* the people who run it: real portraits, inside the third scene */}
-              {i === 2 && faces.length > 0 && (
-                <ul className="mb-7 flex gap-3" aria-label="Members of the TELEO team">
-                  {faces.map((f) => (
-                    <li key={f.name} className="w-[22%] max-w-[7.5rem]">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={f.photo} alt={`${f.name}, ${f.role}`} width={500} height={460} loading="lazy" className="block h-auto w-full" />
-                      <span className="mt-1.5 hidden font-mono text-[0.58rem] uppercase leading-tight tracking-[0.12em] text-marble/80 sm:block">{f.name}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
               <p className="eyebrow">
                 {c.k} · {c.title}
               </p>

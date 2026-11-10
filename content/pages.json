@@ -41,7 +41,7 @@
           {
             "title": "Depth & Focus",
             "href": "/team",
-            "desc": "Deep functional and vertical expertise, from a full operating bench to focused knowledge of software, healthcare IT, tech-enabled services, and industrial technology.",
+            "desc": "Deep functional and vertical expertise, from a full operating bench to focused knowledge of software, HCIT, tech-enabled services, and industrial technology.",
             "cta": "Meet the team"
           },
           {
@@ -364,7 +364,8 @@
         ],
         "ledes": [
           "A dedicated operating team and a repeatable framework that drive durable, profitable, long-term growth."
-        ]
+        ],
+        "layout": "orbit"
       },
       {
         "kind": "section",
@@ -784,12 +785,13 @@
         ],
         "ledes": [
           "A cross-functional committee drives how we evaluate AI in diligence and deploy it across the portfolio, led by our Head of AI."
-        ]
+        ],
+        "layout": "committee"
       },
       {
         "kind": "section",
         "eyebrow": "Center of Excellence",
-        "heading": "An AI Center of Excellence in Romania",
+        "heading": "An AI Center of Excellence",
         "items": [
           {
             "title": "Build once",
@@ -805,7 +807,7 @@
           }
         ],
         "ledes": [
-          "We have established a dedicated AI Center of Excellence in Romania that works like a factory for the whole portfolio: we build AI capabilities once and deploy them across our companies, rather than rebuilding them one business at a time. It extends TELEO's established talent base in the region into a shared, repeatable engine every company can draw on."
+          "We have established a dedicated AI Center of Excellence that works like a factory for the whole portfolio: we build AI capabilities once and deploy them across our companies, rather than rebuilding them one business at a time. It extends TELEO's established talent base into a shared, repeatable engine every company can draw on."
         ]
       }
     ]

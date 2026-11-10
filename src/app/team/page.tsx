@@ -10,7 +10,7 @@ export default function TeamPage() {
   const hero = page.sections[0]
   return (
     <>
-      <PageHero eyebrow={hero.eyebrow} heading={hero.heading} ledes={hero.ledes} motif="laurel" />
+      <PageHero eyebrow={hero.eyebrow} heading={hero.heading} ledes={hero.ledes} motif="teleo" />
       <TeamGrid team={team} />
     </>
   )

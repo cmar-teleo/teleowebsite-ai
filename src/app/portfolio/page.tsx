@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { ReactNode } from 'react'
 import PageHero from '@/components/PageHero'
 import PortfolioGrid from '@/components/PortfolioGrid'
-import PortfolioMap from '@/components/PortfolioMap'
 import Arrow from '@/components/Arrow'
 import { MetopeSvg } from '@/components/visuals/metopes'
 import { company, pages, portfolio, visualSlug, visualVariant } from '@/lib/content'
@@ -22,12 +21,6 @@ export default function PortfolioPage() {
       <PageHero eyebrow={hero.eyebrow} heading={hero.heading} ledes={hero.ledes} motif="columns" />
 
       <section className="py-20 md:py-28">
-        <div className="wrap" data-reveal>
-          <PortfolioMap />
-        </div>
-      </section>
-
-      <section className="pb-24 md:pb-32">
         <div className="wrap">
           <PortfolioGrid companies={companies} visuals={visuals} />
         </div>

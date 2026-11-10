@@ -88,9 +88,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               </Metope>
             </div>
           </div>
-          <dl className="mt-14 grid gap-px overflow-hidden border border-marble/10 bg-marble/10 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
+          <dl className="mt-14 grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
             {c.stats.map(([k, v]) => (
-              <div key={k} className="bg-midnight p-6">
+              <div key={k}>
                 <dt className="font-mono text-[0.66rem] uppercase tracking-[0.18em] text-vein">{k}</dt>
                 <dd className="mt-2 font-serif text-xl">{v}</dd>
               </div>

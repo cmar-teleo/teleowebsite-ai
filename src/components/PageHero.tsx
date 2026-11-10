@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-export type Motif = 'arc' | 'columns' | 'meander' | 'laurel' | 'code' | 'none'
+export type Motif = 'arc' | 'columns' | 'meander' | 'laurel' | 'code' | 'teleo' | 'none'
 
 /**
  * Each page hero carries one painted fresco fragment (public/plates/frag-*.webp):
@@ -12,6 +12,7 @@ const PLATE: Record<Exclude<Motif, 'none'>, { src: string; alt: string }> = {
   columns: { src: '/plates/frag-columns.webp', alt: 'Fresco fragment: three chalk-white columns under a red-ochre frieze with a Greek key' },
   meander: { src: '/plates/frag-meander.webp', alt: 'Fresco fragment: three bands of Greek key in red ochre, chalk white and yellow ochre' },
   laurel: { src: '/plates/frag-laurel.webp', alt: 'Fresco fragment: a laurel wreath in earth green with red-ochre berries' },
+  teleo: { src: '/plates/frag-teleo.webp', alt: 'Fresco fragment: the TELEO T, its left stroke in Egyptian blue and its right in orange ochre, inside a painted ring' },
   code: { src: '/plates/frag-stele.webp', alt: 'Fresco fragment: a chalk-white stele covered in rows of painted marks, like an inscription' },
 }
 

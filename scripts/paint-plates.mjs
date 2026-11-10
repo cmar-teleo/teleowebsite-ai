@@ -460,6 +460,36 @@ await fragment('frag-stele', 141, () => {
   return b
 })
 
+// Firm and Team: the TELEO T as a fresco. Left stroke in Egyptian blue, right in orange ochre.
+await fragment('frag-teleo', 161, () => {
+  const ORANGE = '#dd5f1e'
+  const BLUE = '#2d5f95'
+  const left = [[252, 262], [444, 262], [444, 712], [384, 342], [270, 342]]
+  const right = [[456, 262], [648, 262], [630, 342], [516, 342], [456, 712]]
+  const poly = (pts, c) => `<path d="M${pts.map((p) => p.join(' ')).join('L')}Z" fill="${c}" fill-opacity="0.9"/>`
+  let b = ''
+  // a ring in yellow ochre: the telos
+  const ring = []
+  for (let i = 0; i <= 72; i++) {
+    const a = -Math.PI / 2 + (i / 72) * Math.PI * 2
+    ring.push([450 + Math.cos(a) * 318, 470 + Math.sin(a) * 318])
+  }
+  b += stroke(ring, { w: 12, c: P.ochre, o: 0.85, j: 1.6 })
+  b += poly(left, BLUE) + poly(right, ORANGE)
+  // streaks of the brush over each stroke of the T
+  for (let i = 0; i < 5; i++) {
+    b += stroke([[262 + i * 3, 276 + i * 13], [440, 276 + i * 13]], { w: rr(6, 11), c: i % 2 ? '#3f74ad' : '#234c7a', o: rr(0.35, 0.6), j: 1.6 })
+    b += stroke([[460, 276 + i * 13], [638 - i * 3, 276 + i * 13]], { w: rr(6, 11), c: i % 2 ? '#f07a35' : '#b94c14', o: rr(0.35, 0.6), j: 1.6 })
+  }
+  for (let i = 0; i < 4; i++) {
+    b += stroke([[398 + i * 11, 350], [434 + i * 2.5, 660 - i * 10]], { w: rr(5, 9), c: i % 2 ? '#3f74ad' : '#234c7a', o: rr(0.35, 0.55), j: 1.4 })
+    b += stroke([[502 - i * 11, 350], [466 - i * 2.5, 660 - i * 10]], { w: rr(5, 9), c: i % 2 ? '#f07a35' : '#b94c14', o: rr(0.35, 0.55), j: 1.4 })
+  }
+  // chalk drawing line round the mark
+  b += stroke([...left, left[0]], { w: 2.4, c: P.chalk, o: 0.7, j: 1.4 }) + stroke([...right, right[0]], { w: 2.4, c: P.chalk, o: 0.7, j: 1.4 })
+  return b
+})
+
 /* painted meander tile for the footer rule */
 R = rng(151)
 {

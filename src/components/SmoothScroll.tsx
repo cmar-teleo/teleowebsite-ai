@@ -8,6 +8,8 @@ import Lenis from 'lenis'
 
 gsap.registerPlugin(ScrollTrigger)
 
+let activeLenis: Lenis | null = null
+
 /**
  * Site-wide scroll choreography.
  *  - Lenis smooth scrolling, synced to GSAP ScrollTrigger
@@ -35,6 +37,7 @@ export default function SmoothScroll() {
     let tick: ((t: number) => void) | null = null
     if (!reduced) {
       lenis = new Lenis({ lerp: 0.09 })
+      activeLenis = lenis
       lenis.on('scroll', ScrollTrigger.update)
       tick = (t: number) => lenis!.raf(t * 1000)
       gsap.ticker.add(tick)
@@ -45,11 +48,17 @@ export default function SmoothScroll() {
       window.removeEventListener('resize', setProgress)
       if (tick) gsap.ticker.remove(tick)
       lenis?.destroy()
+      activeLenis = null
     }
   }, [])
 
   // per-route effects
   useEffect(() => {
+    // a new page always opens at its top (unless the link targets an anchor)
+    if (!window.location.hash) {
+      window.scrollTo(0, 0)
+      activeLenis?.scrollTo(0, { immediate: true, force: true })
+    }
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const els = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
     // A clip-path mask hides the element from IntersectionObserver, so masked elements are

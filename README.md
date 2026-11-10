@@ -24,6 +24,7 @@ Deploy the `out/` folder to Cloudflare Pages or any static host. Build command `
 
 | Rule | Where |
 |---|---|
+| The header is liquid glass over the dark site (translucent, blurred), hides on scroll down and returns on scroll up, and uses the white transparent logo. Contact in the header is plain orange text | `src/components/Nav.tsx`, `.glass` in `src/app/globals.css` |
 | The logo is the brand file `public/brand/teleologo1.png`, unmodified. The nav is a white bar over the dark site and share images set it on a white plate. The dark footer uses an all-white version on a transparent background (`teleologo1-white.png`, made by `scripts/make-white-logo.cjs`) | `src/components/Logo.tsx`, `Nav.tsx`, `Footer.tsx` |
 | TELEO orange `#f96015`, used sparingly: the active nav underline, the scroll progress rule, the primary button | `--color-orange` in `src/app/globals.css` |
 | No brass, no cyan. Hairlines and labels are neutral stone and marble | `src/app/globals.css` |
@@ -44,7 +45,7 @@ They are produced by `scripts/paint-plates.mjs`, which builds each shape from ha
 | `site-base.webp`, `site-temple.webp` | Hero: the base that waits, and the temple painted round the column | Keep the centre clear for the column |
 | `floor.webp` | Hero: the Greek-key band nearest the viewer | Any wide strip |
 | `hero-start.webp`, `hero-end.webp` | First paint while layers load; the still shown under reduced motion | Flattened 16:8 stills |
-| `frag-arc`, `frag-columns`, `frag-meander`, `frag-laurel`, `frag-stele` | One fresco fragment per interior page hero | 900 x 900 on transparency |
+| `frag-arc`, `frag-columns`, `frag-meander`, `frag-laurel`, `frag-stele`, `frag-teleo` | One fresco fragment per interior page hero. `frag-teleo` is the TELEO T in Egyptian blue and orange ochre (Firm, Team) | 900 x 900 on transparency |
 | `meander.webp` | The painted Greek key along the top of the footer | A repeating tile |
 
 Positions of the hero layers are in `src/lib/plates.json` (written by the paint script). If a replacement has different dimensions, edit the entry's `x`, `y`, `w`, `h` there.
@@ -56,7 +57,7 @@ Positions of the hero layers are in `src/lib/plates.json` (written by the paint 
 - the camera: four keyframes (`CAM_DESKTOP`, `CAM_MOBILE`) that pan and push across the painting
 - depth: each layer lags or leads the camera (`DEPTH`), plus a small cursor drift
 - the carve-out: the column fades to its underdrawing, lifts, travels, and is painted again; the new temple is washed in from the ground up; the arc closes
-- the captions I, II, III and the closing statement; four team portraits appear inside scene III
+- the captions I, II, III and the closing statement
 
 "Skip the film" jumps past it. Under `prefers-reduced-motion` the stage shows the finished still and the chapters become a plain list.
 
@@ -72,6 +73,10 @@ Positions of the hero layers are in `src/lib/plates.json` (written by the paint 
 | `src/components/Sections.tsx` | Renders the copy-driven sections |
 | `src/components/SmoothScroll.tsx` | Lenis, scroll progress, reveals, parallax, push-ins |
 | `src/components/visuals/metopes.tsx` | The 13 portfolio diagrams (product subjects, not Greek imagery) |
+| `src/components/PortfolioFamilies.tsx` | Home: the portfolio as platform families by sector (no time axis) |
+| `src/components/ThreePs.tsx` | Strategy: People, Product, Process on concentric rings |
+| `src/components/AiCommittee.tsx` | AI: the committee as a hierarchy led by the Head of AI |
+| `src/components/Reel.tsx` | Home: the pinned horizontal pan across the three case studies |
 
 ## Team photographs
 

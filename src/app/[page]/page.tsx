@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ page: str
 
 /** Which classical motif opens each page. */
 const MOTIF: Record<Slug, Motif> = {
-  firm: 'arc',
+  firm: 'teleo',
   culture: 'laurel',
   responsibility: 'laurel',
   strategy: 'columns',
@@ -38,7 +38,7 @@ const MOTIF: Record<Slug, Motif> = {
 const Diagram = ({ phases }: { phases: string[] }) => (
   <section className="pb-24 md:pb-32">
     <div className="wrap">
-      <div className="border border-marble/10 bg-obsidian/40 p-6 md:p-12" data-reveal>
+      <div className="border border-marble/10 bg-obsidian p-6 md:p-12">
         <CarveOutDiagram phases={phases} />
       </div>
     </div>
