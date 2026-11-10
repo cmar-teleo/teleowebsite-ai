@@ -34,7 +34,6 @@ export default function TeamGrid({ team }: { team: Person[] }) {
                 <h2 id={`g-${gi}`} className="eyebrow" data-reveal>
                   {g}
                 </h2>
-                <p className="mt-4 font-mono text-[0.68rem] tracking-[0.18em] text-vein">{String(people.length).padStart(2, '0')}</p>
               </div>
               <ul className="grid grid-cols-2 gap-5 lg:col-span-9 xl:grid-cols-3">
                 {people.map((p, i) => (

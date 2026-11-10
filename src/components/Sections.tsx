@@ -4,6 +4,8 @@ import type { Item, Section } from '@/lib/content'
 import PageHero, { type Motif } from './PageHero'
 import Arrow from './Arrow'
 import ContactBand from './ContactBand'
+import ThreePs from './ThreePs'
+import AiCommittee from './AiCommittee'
 
 const d = (n: number) => ({ '--d': n }) as CSSProperties
 const external = (href: string) => /^(https?:|mailto:|tel:)/.test(href)
@@ -63,8 +65,9 @@ function ItemCard({ item, i, compact }: { item: Item; i: number; compact: boolea
       )}
     </div>
   )
+  const primary = item.kicker === 'Primary Focus'
   return item.href ? (
-    <Link href={item.href} className="card h-full" data-reveal style={d(i)}>
+    <Link href={item.href} className={`card h-full ${primary ? 'card--primary' : ''}`} data-reveal style={d(i)}>
       {body}
     </Link>
   ) : (
@@ -80,7 +83,10 @@ function Body({ s }: { s: Section }) {
   const cols = items.length >= 4 && items.length !== 5 && items.length !== 6 ? 'sm:grid-cols-2 xl:grid-cols-4' : items.length === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'
   return (
     <>
-      {items.length > 0 &&
+      {s.layout === 'orbit' && <ThreePs items={items} />}
+      {s.layout === 'committee' && <AiCommittee items={items} />}
+      {!s.layout &&
+        items.length > 0 &&
         (titleOnly ? (
           <ul className="mt-12 grid gap-px overflow-hidden border border-marble/10 bg-marble/10 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((it, i) => (

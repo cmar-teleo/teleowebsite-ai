@@ -42,7 +42,9 @@ export default function CarveOutDiagram({ phases }: { phases: string[] }) {
         tl.progress(1)
         return
       }
-      ScrollTrigger.create({ trigger: el, start: 'top 72%', end: 'bottom 55%', scrub: 0.8, animation: tl })
+      // hold the diagram in the middle of the screen until the whole sequence has played
+      const frame = el.parentElement ?? el
+      ScrollTrigger.create({ trigger: frame, start: 'center center', end: '+=140%', pin: frame, pinSpacing: true, anticipatePin: 1, scrub: 0.8, animation: tl })
     }, el)
     return () => ctx.revert()
   }, [])

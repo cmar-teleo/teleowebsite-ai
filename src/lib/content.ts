@@ -5,6 +5,8 @@ import pagesJson from '../../content/pages.json'
 export type Item = { num?: string; kicker?: string; title?: string; desc?: string; href?: string; cta?: string }
 export type Section = {
   kind: 'hero' | 'band' | 'section' | 'contact'
+  /** optional special presentation for a section's items */
+  layout?: 'orbit' | 'committee'
   eyebrow?: string
   heading?: string
   ledes?: string[]
