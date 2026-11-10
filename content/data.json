@@ -1,0 +1,1227 @@
+{
+  "firm": {
+    "name": "TELEO Capital Management, LLC",
+    "url": "https://teleocapital.com",
+    "gaId": "G-41HYMWN9FN",
+    "formEndpoint": "https://api.web3forms.com/submit",
+    "formKey": "5dbb055e-70a8-48d3-add7-37d06dff8243",
+    "tagline": "Empowering businesses to perform and execute.",
+    "phone": "(424) 323-3995",
+    "phoneHref": "tel:+14243233995",
+    "deals": {
+      "name": "Deal Submissions",
+      "email": "cmartin@teleocapital.com"
+    },
+    "ir": {
+      "name": "Investor Relations",
+      "email": "eearl@teleocapital.com"
+    },
+    "press": {
+      "name": "Matt Oehlmann",
+      "email": "moehlmann@teleocapital.com"
+    },
+    "portal": "https://adfs4.sts.altareturn.com/adfs/ls/?wa=wsignin1.0&wtrealm=urn%3aportal%3ateleo&wctx=https%3a%2f%2fteleo.altareturn.com%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%252FPages%252FHome%252Easpx&wreply=https%3a%2f%2fteleo.altareturn.com%2f_trust%2fdefault.aspx",
+    "linkedin": "https://www.linkedin.com/company/teleo-capital",
+    "offices": {
+      "hq": {
+        "label": "Headquarters",
+        "city": "Boise, Idaho",
+        "addr": "1100 W Idaho St, Suite 330, Boise, ID 83702"
+      },
+      "west": {
+        "label": "West Coast",
+        "city": "Los Angeles, California",
+        "addr": "2121 Rosecrans, Suite 3320, El Segundo, CA 90245"
+      }
+    },
+    "boilerplate": "TELEO Capital Management, LLC (\"TELEO\") is an operationally-focused private equity firm targeting opportunities in the Software & Technology, Healthcare IT, Business Services, and Industrial sectors. TELEO provides capital, strategic thought, and operational resources, empowering management to perform and execute their business plan. For additional information, visit www.teleocapital.com."
+  },
+  "portfolio": [
+    {
+      "slug": "modersys",
+      "name": "Modersys",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2026,
+      "line": "Manufacturing intelligence software platform serving Life Sciences.",
+      "summary": "Modersys is a manufacturing intelligence software platform helping biopharmaceutical, nutritional, and life-sciences companies improve yield, reduce variability, and maintain regulatory fidelity across the production lifecycle. Carved out of Applied Materials and rebranded from SmartFactory Rx, it combines real-time analytics, AI/ML process intelligence, and advanced process control, with 30+ years of expertise and deployments across the U.S., Europe, and Asia Pacific.",
+      "txn": "Carve-out",
+      "date": "March 2026",
+      "from": "Applied Materials",
+      "caseStudy": null
+    },
+    {
+      "slug": "numodata",
+      "name": "NumoData",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2025,
+      "line": "AI-powered service assurance software.",
+      "summary": "NumoData is an independent global software company specializing in AI-powered network intelligence, AIOps, and advanced analytics for communications service providers and enterprises. Carved out of EXFO, it helps network operators transition toward AI-powered autonomous operations.",
+      "txn": "Corporate carve-out",
+      "date": "October 2025",
+      "from": "EXFO",
+      "caseStudy": null
+    },
+    {
+      "slug": "softrax",
+      "name": "Softrax",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2025,
+      "line": "Revenue management and recognition software for complex billing and ASC 606 compliance.",
+      "summary": "Softrax is a revenue management and recognition platform automating complex billing and ASC 606 compliance for enterprises with sophisticated revenue arrangements. It replaces spreadsheets and manual close processes with automated revenue recognition, contract management, and billing, giving finance teams audit-ready accuracy and real-time visibility across subscription, usage, and multi-element arrangements, and has expanded through the BluLogix add-on.",
+      "txn": "Corporate carve-out",
+      "date": "February 2025",
+      "from": "Telus Corporation",
+      "caseStudy": null
+    },
+    {
+      "slug": "sharpen",
+      "name": "Sharpen",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2022,
+      "line": "Cloud contact-center platform (CCaaS) delivering omnichannel customer engagement.",
+      "summary": "Sharpen is a cloud contact-center platform (CCaaS) delivering omnichannel customer engagement across voice, messaging, and digital channels. It anchors TELEO's communications platform and has expanded through add-on acquisitions including Plum Voice, Ytel, and Webtext, broadening its programmable voice, API, and messaging capabilities.",
+      "txn": "Special Situation",
+      "date": "November 2022",
+      "from": "Private ownership",
+      "caseStudy": null
+    },
+    {
+      "slug": "flatirons",
+      "name": "Flatirons",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2021,
+      "line": "Aviation content and technical documentation software for airlines and OEMs.",
+      "summary": "Flatirons Solutions provides aviation content and technical documentation software for airlines, MROs, and OEMs managing mission-critical operational data. It digitizes and structures the technical content that keeps aircraft flying safely and in compliance, and has extended into augmented-reality work instructions through the Scope AR add-on.",
+      "txn": "Corporate carve-out",
+      "date": "September 2021",
+      "from": "Presse Participations",
+      "caseStudy": null
+    },
+    {
+      "slug": "plum-voice",
+      "name": "Plum Voice",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2023,
+      "parent": "sharpen",
+      "line": "Programmable voice and IVR communications platform for enterprise self-service.",
+      "summary": "Plum Voice is a programmable voice and IVR communications platform powering enterprise self-service and automated customer interactions. Acquired as an add-on to Sharpen, its APIs let enterprises build sophisticated IVR and voice applications with security and reliability at scale.",
+      "txn": "Add-on",
+      "date": "October 2023",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "assuricare",
+      "name": "AssuriCare",
+      "sector": "Healthcare IT",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2023,
+      "parent": "wellcove",
+      "line": "Care management and claims platform serving long-term-care insurers and families.",
+      "summary": "AssuriCare offers a comprehensive suite of software tools to home care agencies, registries, and insurers. Acquired as an add-on to Wellcove, it streamlines the claims process and improves the quality and efficiency of services across the senior-care market.",
+      "txn": "Add-on",
+      "date": "June 2023",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "univeris",
+      "name": "Univeris",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2021,
+      "line": "Wealth management software powering advisors and dealers across North America.",
+      "summary": "Univeris is an enterprise wealth-management software platform powering financial advisors and dealers across North America. It automates the full advisor lifecycle, from onboarding and trade processing to compliance and reporting, and has added TechRules to deepen its analytics and reporting capabilities.",
+      "txn": "Growth equity investment",
+      "date": "June 2021",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "industrial-defender",
+      "name": "Industrial Defender",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Realized",
+      "year": 2019,
+      "line": "OT/ICS cybersecurity and compliance software for critical infrastructure.",
+      "summary": "Industrial Defender is an OT/ICS cybersecurity and compliance software platform protecting critical infrastructure and industrial control systems. It gives operators unified visibility into industrial assets, vulnerabilities, and compliance posture, and was supported by TELEO through to a successful realization.",
+      "txn": "Corporate carve-out",
+      "date": "December 2019",
+      "from": "Capgemini America, Inc.",
+      "caseStudy": "industrial-defender"
+    },
+    {
+      "slug": "paxia",
+      "name": "Paxia",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Realized",
+      "year": 2019,
+      "line": "Airline catering, inflight retail, and onboard-services software platform.",
+      "summary": "Paxia is an airline catering, inflight retail, and onboard-services software platform serving global carriers. It manages the complex logistics of inflight service, from catering and provisioning to onboard retail and reporting, and was supported by TELEO through to a successful realization.",
+      "txn": "Corporate carve-out",
+      "date": "June 2019",
+      "from": "E-Gatematrix",
+      "caseStudy": "paxia"
+    },
+    {
+      "slug": "scope-ar",
+      "name": "Scope AR",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2025,
+      "parent": "flatirons",
+      "line": "Enterprise augmented-reality work instructions and remote assistance.",
+      "summary": "Scope AR is an enterprise augmented-reality platform for work instructions and remote assistance in complex industrial environments. Acquired as an add-on to Flatirons, it brings step-by-step AR work instructions and live remote expert guidance to frontline workers, extending the platform from static documentation into interactive, in-context guidance.",
+      "txn": "Add-on",
+      "date": "May 2025",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "ytel",
+      "name": "Ytel",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2025,
+      "parent": "sharpen",
+      "line": "Cloud communications APIs and contact-center tooling.",
+      "summary": "Ytel provides cloud communications APIs and contact-center tooling for programmable voice and messaging at scale. Acquired as an add-on to Sharpen, it adds developer-friendly communications APIs and omnichannel messaging to the platform's programmable communications stack.",
+      "txn": "Add-on",
+      "date": "November 2025",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "blulogix",
+      "name": "BluLogix",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2025,
+      "parent": "softrax",
+      "line": "Agile monetization and complex billing software.",
+      "summary": "BluLogix is an agile monetization and complex billing platform for subscription, usage-based, and channel revenue models. Acquired as an add-on to Softrax, its billing engine handles multi-tier, multi-currency, and partner-channel revenue for growing enterprises.",
+      "txn": "Add-on",
+      "date": "October 2025",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "webtext",
+      "name": "Webtext",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2023,
+      "parent": "sharpen",
+      "line": "Conversational business messaging and contact-center SMS.",
+      "summary": "Webtext is a conversational business-messaging and contact-center SMS platform connecting enterprises with customers across channels. Acquired as an add-on to Sharpen, it enables agents and automated workflows to reach customers on the channels they prefer.",
+      "txn": "Add-on",
+      "date": "April 2023",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "fios",
+      "name": "Fios",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Realized",
+      "year": 2021,
+      "parent": "umt360",
+      "line": "Data and analytics tooling for enterprise portfolio platforms.",
+      "summary": "Fios provides data and analytics tooling for enterprise portfolio and financial-management platforms. Acquired as an add-on to UMT360, it strengthened the platform's data and analytics capabilities and was supported by TELEO through to a successful realization.",
+      "txn": "Add-on",
+      "date": "December 2021",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "umt360",
+      "name": "UMT360",
+      "sector": "Tech-Enabled Services",
+      "type": "Platform",
+      "status": "Realized",
+      "year": 2019,
+      "line": "Strategic portfolio and financial management for the enterprise.",
+      "summary": "UMT360 is a strategic portfolio and financial-management software platform for the enterprise PMO, giving large organizations a single view of project portfolios, capacity, and financials. TELEO's investment and the Fios and Western Principles add-ons supported the platform through to a successful realization.",
+      "txn": "Special situation",
+      "date": "March 2019",
+      "from": "Private seller",
+      "caseStudy": "umt360"
+    },
+    {
+      "slug": "techrules",
+      "name": "TechRules",
+      "sector": "Software & Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2022,
+      "parent": "univeris",
+      "line": "Wealth-tech reporting and analytics.",
+      "summary": "TechRules is a wealth-technology reporting and analytics provider serving advisors and financial institutions. Acquired as an add-on to Univeris, it deepens the platform's client reporting and portfolio analytics with sophisticated performance and consolidated reporting.",
+      "txn": "Add-on",
+      "date": "June 2022",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "rand-mcnally",
+      "name": "Rand McNally",
+      "sector": "Industrial Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2020,
+      "line": "Navigation, fleet telematics, and connected-vehicle technology.",
+      "summary": "Rand McNally is a software-led provider of navigation, fleet telematics, and connected-vehicle technology for commercial and consumer markets. One of the most recognized names in American mapping, it generates recurring subscription revenue supported by in-cab hardware and has expanded through add-on acquisitions including Fleetsu and SafetyDirect, spanning fleet tracking, ELD compliance, and driver safety.",
+      "txn": "Special situations",
+      "date": "October 2020",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "fleetsu",
+      "name": "Fleetsu",
+      "sector": "Industrial Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2022,
+      "parent": "rand-mcnally",
+      "line": "Fleet telematics and operations analytics.",
+      "summary": "Fleetsu is a fleet telematics and operations-analytics platform for commercial vehicle fleets. Acquired as an add-on to Rand McNally, it gives fleet managers real-time visibility into vehicle health, utilization, and driver behavior.",
+      "txn": "Add-on",
+      "date": "March 2022",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "milemaker",
+      "name": "MileMaker",
+      "sector": "Industrial Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2020,
+      "line": "Truck-routing and mileage software for commercial fleet logistics and rating.",
+      "summary": "MileMaker is a truck-routing and mileage software platform for commercial fleet logistics, rating, and compliance. It delivers the industry-standard mileage and routing data used to rate freight and plan commercial trucking, and complements TELEO's connected-vehicle and logistics software footprint.",
+      "txn": "Special situation",
+      "date": "October 2020",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "wellcove",
+      "name": "Wellcove",
+      "sector": "Healthcare IT",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2021,
+      "line": "Insurance administration and BPO for long-term-care carriers.",
+      "summary": "Wellcove is an insurance administration and business-process outsourcing platform for long-term-care carriers, combining software and services to administer complex long-term-care insurance policies. It anchors a Healthcare IT platform expanded through the AssuriCare add-on.",
+      "txn": "Corporate carve-out",
+      "date": "August 2021",
+      "from": "Capgemini America, Inc.",
+      "caseStudy": null
+    },
+    {
+      "slug": "western-principles",
+      "name": "Western Principles",
+      "sector": "Tech-Enabled Services",
+      "type": "Add-on",
+      "status": "Realized",
+      "year": 2022,
+      "parent": "umt360",
+      "line": "Tech-enabled business services platform.",
+      "summary": "Western Principles is a tech-enabled business-services platform supporting enterprise operations. Acquired as an add-on to UMT360, it extended the platform's services capabilities and was supported by TELEO through to a successful realization.",
+      "txn": "Add-on",
+      "date": "February 2022",
+      "from": "Private seller",
+      "caseStudy": null
+    },
+    {
+      "slug": "teesnap",
+      "name": "Teesnap",
+      "sector": "Software & Technology",
+      "type": "Platform",
+      "status": "Active",
+      "year": 2021,
+      "line": "Golf-course point-of-sale and management software.",
+      "summary": "Teesnap is a golf-course point-of-sale and management software platform for course operators. It unifies tee-sheet management, point of sale, and customer marketing in a single cloud platform, giving operators modern tools to grow rounds and revenue.",
+      "txn": "Corporate carve-out",
+      "date": "May 2021",
+      "from": "Allegiant Travel Company",
+      "caseStudy": null
+    },
+    {
+      "slug": "safetydirect",
+      "name": "SafetyDirect",
+      "sector": "Industrial Technology",
+      "type": "Add-on",
+      "status": "Active",
+      "year": 2024,
+      "parent": "rand-mcnally",
+      "line": "Fleet safety analytics and driver telematics.",
+      "summary": "SafetyDirect is a fleet-safety analytics and driver-telematics platform for commercial vehicle operators. Acquired as an add-on to Rand McNally, it adds driver-safety scoring and event analytics to help fleets reduce risk and improve driver performance.",
+      "txn": "Corporate carve-out and add-on",
+      "date": "March 2024",
+      "from": "Bendix CVS",
+      "caseStudy": null
+    }
+  ],
+  "caseStudies": [
+    {
+      "slug": "umt360",
+      "name": "UMT360",
+      "sector": "Enterprise PPM Software",
+      "type": "Special Situations",
+      "hq": "Bellevue, Washington",
+      "invested": "March 2019",
+      "exited": "June 2023",
+      "card": "A founder-led recap repositioned as a strategic portfolio management leader, with EBITDA expanded 8x by exit.",
+      "fact": "UMT360 is a leading provider of Strategic Portfolio Management (\"SPM\") software and services helping customers gain the visibility and insight they need to align execution with strategy across all project, program, product, and IT asset portfolios.",
+      "stats": [
+        [
+          "Acquired Date",
+          "March 11, 2019"
+        ],
+        [
+          "Transaction Type",
+          "Majority Recap"
+        ],
+        [
+          "Acquired From",
+          "Private ownership"
+        ],
+        [
+          "Industry",
+          "Strategic portfolio management software"
+        ]
+      ],
+      "highlight": "UMT360 built a market leading product in a rapidly growing and evolving PPM market. The business was at an inflection point with the founders looking to transition out of the day-to-day operations and find the right partner for a rising new CEO. TELEO provided a creative structure that aligned incentives while meeting the seller's objectives.",
+      "merits": [
+        [
+          "Growth Potential",
+          "Opportunity to reposition a project portfolio management company as a leader in a newly defined strategic portfolio management category and drive organic growth through expanded channel partnerships and a focused direct sales process."
+        ],
+        [
+          "Industry Attractiveness",
+          "Organizations of all sizes are constantly responding to new technological disruption creating a growing demand for various levels of transformation while maintaining the visibility and control needed to maximize ROI."
+        ],
+        [
+          "Operational Improvement",
+          "Immediate opportunity to modernize financial and operational infrastructure, professionalize go-to-market and FP&A functions, and expand product capabilities in a business that had not yet reached its full potential under prior ownership."
+        ]
+      ],
+      "value": [
+        [
+          "Operational Excellence",
+          "Streamlined the cost structure to improve financial transparency and efficiency, implemented US GAAP accounting, and professionalized the company's go-to-market and FP&A functions."
+        ],
+        [
+          "Product Investment",
+          "Built out C-Suite tools including dashboarding, reporting, and roadmapping; acquired FIOS-Insight to expand product capabilities into enterprise architecture; simplified and modernized outdated UI/UX."
+        ],
+        [
+          "Talent Optimization",
+          "Leveraged the Cluj-Napoca, Romania center of excellence to expand talent base cost-effectively; acquired the Western Principles consulting team based in Western Canada to expand its base of lower-cost, high-quality consultants."
+        ],
+        [
+          "Effective Go-to-Market",
+          "Transitioned from feature/function selling within IT to solution selling with the C-suite; landed new enterprise logos including Johnson & Johnson, Merck, Caterpillar, and Walgreens; deepened footprint within existing accounts."
+        ]
+      ],
+      "outcome": "Under TELEO's ownership, UMT360 grew revenue substantially and expanded EBITDA 8x, reaching the \"Rule of 43\" in its exit year, while deepening its existing accounts through strong net retention and rising revenue per customer. The company also built the strongest new-logo pipeline in its history and converted it into landmark enterprise wins, culminating in a successful exit in 2023.",
+      "results": [
+        [
+          "Revenue growth",
+          "Grew revenue substantially during the hold period, achieving the \"Rule of 43\" in the exit year."
+        ],
+        [
+          "Customer expansion",
+          "Deepened relationships within existing accounts, demonstrated by strong net retention and a meaningful increase in average revenue per account."
+        ],
+        [
+          "Won the industry's marquee accounts",
+          "Built the strongest new-logo pipeline in the company's history and converted it into landmark enterprise wins."
+        ]
+      ],
+      "ps": {
+        "people": "Backed a rising new CEO and expanded a lower-cost, high-quality talent base through a Cluj-Napoca, Romania center of excellence and the acquisition of the Western Principles consulting team.",
+        "product": "Built C-suite dashboards, reporting, and roadmapping; acquired FIOS-Insight to extend into enterprise architecture; and modernized the UI/UX.",
+        "process": "Streamlined the cost structure, implemented US GAAP, and professionalized FP&A, then shifted go-to-market from IT feature-selling to C-suite solution-selling, landing marquee logos like Johnson & Johnson, Merck, and Caterpillar."
+      }
+    },
+    {
+      "slug": "paxia",
+      "name": "Paxia",
+      "sector": "Aviation Operations Software",
+      "type": "Corporate Carve-out",
+      "hq": "Herndon, Virginia",
+      "invested": "June 2019",
+      "exited": "July 2025",
+      "card": "Carved out of GateGroup and built into a category leader in aviation operations software, with revenue nearly doubled by exit.",
+      "fact": "Provides mission-critical software for airline catering management and in-flight operations, connecting the world's largest carriers with their catering providers. Manages galley load planning, schedules, orders, and invoices, a core operational workflow for airlines with limited modern software alternatives.",
+      "stats": [
+        [
+          "Acquired Date",
+          "June 27, 2019"
+        ],
+        [
+          "Transaction Type",
+          "Corporate Carve-out"
+        ],
+        [
+          "Acquired From",
+          "GateGroup"
+        ],
+        [
+          "Industry",
+          "Aviation operations software"
+        ]
+      ],
+      "highlight": "GateGroup was looking for a partner who could take care of shared customer relationships, invest in the software product to expand its feature capabilities, and exit the transition services agreement (TSA) on an expedited timeline.",
+      "merits": [
+        [
+          "Growth Potential",
+          "Opportunity to transform a non-core, sub-scale division of a large corporation into a standalone category leader in aviation operations software, with a clear path to expand beyond Tier 1 carriers."
+        ],
+        [
+          "Industry Attractiveness",
+          "Mission-critical software embedded in airline operations, with durable customer relationships and high switching costs, proven by the business's ability to sustain strong customer retention through the COVID-19 collapse in global air travel."
+        ],
+        [
+          "Operational Improvement",
+          "Immediate opportunity to modernize the platform, expand the product suite, and rebuild go-to-market motion in a business that had been under-invested in as a corporate division."
+        ]
+      ],
+      "value": [
+        [
+          "Operational Excellence",
+          "Completed the carve-out efficiently, including implementation of new systems and termination of the transition services agreement."
+        ],
+        [
+          "Product Investment",
+          "Developed new products including asset management, pre-order, and pre-select capabilities, plus a data lake with BI tools; modularized the solution to expand into Tier 2 and Tier 3 airlines."
+        ],
+        [
+          "Talent Optimization",
+          "Transitioned Rodney Duty from GM at GateGroup to CEO at Paxia; hired a new GTM leader from Sabre based in the Middle East; combined India outsourcing with US FTEs to cost-effectively develop new software modules."
+        ],
+        [
+          "Effective Go-to-Market",
+          "Won new logos including Hawaiian Airlines and Emirates, driven by the largest new logo pipeline in the company's history; upsold Galleys customers into other modules of Paxia Cloud."
+        ]
+      ],
+      "outcome": "TELEO carved Paxia out of GateGroup and stood it up as an independent company, building standalone systems and operations to establish it as a category leader in aviation operations software. Over the hold period the business nearly doubled revenue, reaching the \"Rule of 70\" in its exit year, powered by the strongest new-logo pipeline in its history and landmark wins with some of the world's largest airlines before a successful exit in 2025.",
+      "results": [
+        [
+          "Revenue growth",
+          "Nearly doubled revenue during the hold period, achieving the \"Rule of 70\" in the exit year."
+        ],
+        [
+          "Carve-out to category leader",
+          "Carved a non-core, sub-scale division out of GateGroup and stood it up as an independent company, building standalone systems and operations, to become a category leader in aviation operations software."
+        ],
+        [
+          "Won the industry's marquee carriers",
+          "Built the strongest new-logo pipeline in the company's history and converted it into landmark wins with the world's largest airlines."
+        ]
+      ],
+      "ps": {
+        "people": "Transitioned Rodney Duty from GateGroup GM to CEO, hired a new go-to-market leader from Sabre, and blended India outsourcing with US engineers to build new modules cost-effectively.",
+        "product": "Added asset-management, pre-order, and pre-select modules plus a data lake with BI tools, and modularized the platform to reach Tier 2 and Tier 3 airlines.",
+        "process": "Carved the business out of GateGroup, stood up standalone systems, and exited the TSA on an expedited timeline, then won landmark carriers including Hawaiian Airlines and Emirates."
+      }
+    },
+    {
+      "slug": "industrial-defender",
+      "name": "Industrial Defender",
+      "sector": "OT Cybersecurity & Compliance Software",
+      "type": "Corporate Carve-out",
+      "hq": "Foxborough, Massachusetts",
+      "invested": "December 2019",
+      "exited": "December 2025",
+      "card": "Carved out of Capgemini and grown into a stronger, more global OT security business, with revenue more than doubled to the Rule of 40.",
+      "fact": "Provides OT cybersecurity and compliance software purpose-built for critical infrastructure providers, including energy, utilities, and industrial operators globally. Automatically detects changes to baseline configurations and prioritizes vulnerabilities within Industrial Control Systems, a capability increasingly mandated by regulators.",
+      "stats": [
+        [
+          "Acquired Date",
+          "December 31, 2019"
+        ],
+        [
+          "Transaction Type",
+          "Corporate Carve-out"
+        ],
+        [
+          "Acquired From",
+          "Capgemini America, Inc."
+        ],
+        [
+          "Industry",
+          "OT cybersecurity & compliance software"
+        ]
+      ],
+      "highlight": "Sourced through a long-standing relationship with Capgemini and the sell-side investment bank. Capgemini sought a partner with the operational expertise to run a mission-critical software business, preserve customer relationships, and provide a strong home for the employees transitioning with the business.",
+      "merits": [
+        [
+          "Growth Potential",
+          "Increasing demand driven by growing regulatory requirements (NERC CIP) and heightened threat exposure to critical infrastructure, creating a strong and expanding market for OT cybersecurity solutions."
+        ],
+        [
+          "Industry Attractiveness",
+          "Mature, stable market with mission-critical software deeply embedded in the operations of critical infrastructure customers, resulting in high switching costs and durable customer relationships."
+        ],
+        [
+          "Operational Improvement",
+          "Immediate opportunity to drive organic growth through focused go-to-market investment and product enhancements in a business that had been starved of resources under corporate ownership."
+        ]
+      ],
+      "value": [
+        [
+          "Carve-out execution",
+          "Completed the full carve-out in under 60 days, including implementation of new systems and termination of the transition services agreement. Transitioned the business from a perpetual license model to a recurring term license model."
+        ],
+        [
+          "Leadership build",
+          "Built out a full leadership team from the ground up, including CEO, CRO, and CMO, while retaining and supporting the existing core operating team."
+        ],
+        [
+          "Platform modernization",
+          "Executed a significant modernization of the platform including UI/UX improvements, added AI capabilities, expanded protocol coverage, and broadened API integrations and white-labeling for strategic partners."
+        ],
+        [
+          "Market expansion",
+          "Re-established brand awareness in the OT security space, expanded into the government sector and international markets including Europe and the Middle East, and captured significant market share from displaced legacy competitors."
+        ]
+      ],
+      "outcome": "Following the carve-out from Capgemini, Industrial Defender more than doubled revenue while expanding margins to reach the Rule of 40. The company re-established its brand in OT security and grew internationally into Europe and the Middle East, exiting in 2025 as a stronger, more profitable, and more global business.",
+      "results": [
+        [
+          "Revenue growth",
+          "Grew revenue by over 100% during the hold period."
+        ],
+        [
+          "Margin expansion",
+          "Expanded profitability margins to achieve the Rule of 40."
+        ],
+        [
+          "International expansion",
+          "Expanded internationally into Europe and the Middle East."
+        ]
+      ],
+      "ps": {
+        "people": "Built a full leadership team from the ground up, including CEO, CRO, and CMO, while retaining and supporting the existing core operating team.",
+        "product": "Modernized the platform with UI/UX improvements and AI capabilities, expanded protocol coverage, and broadened API integrations and white-labeling for strategic partners.",
+        "process": "Completed the carve-out from Capgemini in under 60 days and shifted from perpetual to recurring term licenses, then re-established brand awareness and expanded into government, Europe, and the Middle East."
+      }
+    }
+  ],
+  "team": [
+    {
+      "group": "Leadership",
+      "name": "George Kase",
+      "role": "Managing Partner",
+      "li": "https://www.linkedin.com/in/george-kase-98458a28",
+      "bio": [
+        "George Kase is a Managing Partner and member of TELEO Capital's Investment Committee. George is primarily responsible for deal sourcing, due diligence, valuation, transaction execution, operational improvements, and portfolio management.",
+        "George has deep investing and transactional expertise. Prior to co-founding TELEO Capital, George was a Partner at Marlin Equity Partners for over a decade. He was on the Investment Committee for four Marlin Funds (I, II, III, and Heritage). During his time at Marlin, he led over twenty acquisitions (both platform and follow-on), including Caprio, Liquent, and Duncan Solutions. Prior to Marlin, George worked in management consulting with McKinsey & Company and in investment banking with CIBC Oppenheimer, focusing on mergers and acquisitions.",
+        "George earned an M.B.A. from the Stanford Graduate School of Business and a B.A. in Economics from the University of California, Los Angeles, where he was an Academic All-American and three-year starter on the football team."
+      ]
+    },
+    {
+      "group": "Leadership",
+      "name": "Andres Martinez",
+      "role": "Managing Partner",
+      "li": "https://www.linkedin.com/in/andy-martinez-b9246b4",
+      "bio": [
+        "Andres (Andy) Martinez is a Managing Partner and member of TELEO Capital's Investment Committee. Andy is primarily responsible for deal sourcing, due diligence, valuation, transaction execution, operational improvements, and portfolio management.",
+        "Andy has deep financial, investing, operational, restructuring, and transactional expertise. Prior to co-founding TELEO Capital, Andy helped launch Strategic Equity, Inc., a family office based in Beverly Hills. Prior to Strategic Equity, Andy worked as a Principal at Marlin Equity Partners as a deal lead in Fund II and III. His most recent transactions at Marlin included Prologic, FCTI, and Burroughs Payment Systems. Prior to Marlin, Andy worked at the Gores Group in New York, where he focused exclusively on investments in the technology and telecom sectors. At Gores, Andy was involved in the successful acquisitions of Proxicom and Global Tel Link. Before joining Gores, Andy worked at Bay Harbour Management, a special situations hedge fund, and as an investment banker at Credit Suisse in the media and telecom group.",
+        "Andy earned a J.D. from the University of Texas School of Law and a B.S. in Finance and Entrepreneurial Management from the Wharton School of Business at the University of Pennsylvania, where he graduated cum laude."
+      ]
+    },
+    {
+      "group": "Leadership",
+      "name": "Robb Warwick",
+      "role": "Managing Partner",
+      "li": "https://www.linkedin.com/in/robb-warwick-6547978",
+      "bio": [
+        "Robb Warwick is a Managing Partner and member of TELEO Capital's Investment Committee. Robb, as Chief Financial Officer and Head of Operations, is primarily responsible for commercial, financial, and tax due diligence, as well as valuation, operational improvements, and portfolio management. In addition, Robb is also responsible for the firm's back-office functions, including fund administration, accounting, taxes, and compliance.",
+        "Robb has deep financial, operational, and restructuring expertise. Prior to co-founding TELEO Capital, Robb served as Head of Operations at Marlin Equity Partners, where he was on the Investment Committee for seven Marlin Funds (II, III, IV, V, Heritage, Heritage II, and Europe). During his time at Marlin, he was involved in over 100 acquisitions (both platform and follow-on). Prior to Marlin, Robb was Chief Financial Officer at Micron Computer, Inc., Tax Manager at Micron Technology, Inc., Controller at Futura Corporation, Manager at Coopers & Lybrand (now known as PwC), and Corporate Controller and Vice President of Tax at Micron Electronics, Inc.",
+        "Robb earned a double major in Accounting and Business Administration from Northwest Nazarene University, where he was a four-year starter on the basketball and tennis teams."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Matt Oehlmann",
+      "role": "Partner",
+      "li": "https://www.linkedin.com/in/matthew-oehlmann-8669323",
+      "bio": [
+        "Matt Oehlmann is a Partner and member of TELEO Capital's Investment Committee. Matt primarily focuses on deal origination, qualification, and portfolio monitoring.",
+        "Matt has deep investing expertise, bringing over 15 years of sourcing experience in the lower middle market. Prior to TELEO Capital, Matt was Global Head of Business Development with a Los Angeles-based investment firm focused on lower-middle-market corporate carve-outs and special situations. Prior to that, he was a Principal at Evergreen Pacific Partners and a Vice President at Marlin Equity Partners. He was instrumental in some of the firm's most successful transactions during his tenure. Matt started his investment career at Platinum Equity in the global business development team.",
+        "Matt earned a B.S. in Business Administration from the Pennsylvania State University."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Connor Martin",
+      "role": "Principal",
+      "li": "https://www.linkedin.com/in/connor-martin-teleo",
+      "bio": [
+        "Connor Martin is a Principal at TELEO Capital. Connor's primary responsibilities include deal origination and qualification. Prior to joining TELEO Capital, Connor was an Associate at Critical Point Capital, where he helped lead their business development efforts.",
+        "Connor earned a B.S. in Business Administration from the University of Southern California Marshall School of Business."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Robert Shilton",
+      "role": "Principal",
+      "li": "https://www.linkedin.com/in/rob-shilton",
+      "bio": [
+        "Rob Shilton is a Principal at TELEO Capital. Rob's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Prior to joining TELEO Capital, Rob worked as a Managing Director at Kayne Anderson Capital Advisors on their growth capital team, assisting on transactions across a number of software verticals including supply chain and logistics, fintech, healthcare, cyber security, and others.",
+        "Rob earned his B.A. in Sociology from the University of Pennsylvania where he graduated cum laude."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Geoff Vasudevan",
+      "role": "Principal",
+      "li": "https://www.linkedin.com/in/geoffrey-vasudevan-5432143b",
+      "bio": [
+        "Geoff Vasudevan is a Vice President at TELEO Capital. Geoff's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Geoff previously worked on TELEO Capital's Operations team, where his primary responsibilities included advisement and support on strategy execution and business process improvement for portfolio companies.",
+        "Prior to joining TELEO Capital, Geoff was a partner at RCP Equity, where he was responsible for evaluating investments and driving operational results for portfolio companies. During his time at RCP, he took an operational role as Director of Strategic Initiatives at Avalex Technologies resulting in a successful exit to Mercury Systems. Geoff began his career working at DC Advisory as a sell-side investment banker focused on software and tech-enabled services.",
+        "Geoff earned a B.S.E. in Computer Science and Economics from the University of Pennsylvania, where he graduated cum laude."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Andie De Werd",
+      "role": "Vice President",
+      "li": "https://www.linkedin.com/in/andie-de-werd-329193b4",
+      "bio": [
+        "Andie is a Senior Associate at TELEO Capital. Andie's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Prior to joining TELEO Capital, Andie worked as an Associate at Marlin Equity Partners, assisting with transactions across a number of software verticals. Andie began her career at Financial Technology Partners as a sell-side M&A investment banker focused on Fintech transactions.",
+        "Andie graduated with a B.S. in Business Administration with concentrations in Finance and Accounting and a minor in Economics from Northeastern University, where she graduated summa cum laude."
+      ]
+    },
+    {
+      "group": "Leadership",
+      "name": "Estelle Spanneut",
+      "role": "Chief of Staff",
+      "li": "https://www.linkedin.com/in/estelle-spanneut",
+      "bio": [
+        "Estelle is the Chief of Staff at TELEO Capital. Estelle's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Prior to joining TELEO Capital, Estelle was an Associate at Volition Capital, a Boston-based growth equity firm, where she was focused on sourcing and execution for B2B software businesses.",
+        "Estelle graduated with a B.S. in Operations and Information Management from Georgetown University's McDonough School of Business."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Kelly Blake",
+      "role": "Senior Associate",
+      "li": "https://www.linkedin.com/in/kelly-blake",
+      "bio": [
+        "Kelly is a Senior Associate at TELEO Capital. Kelly's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Prior to joining TELEO Capital, Kelly worked as a summer intern at Oak's LAB and Sony Pictures Entertainment.",
+        "Kelly graduated with a B.S. in Management Science and Engineering with a Finance and Decision emphasis from Stanford University."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Matthew Farrow",
+      "role": "Senior Associate",
+      "li": "https://www.linkedin.com/in/farrowmatthew",
+      "bio": [
+        "Matthew is a Senior Associate at TELEO Capital. Matthew's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Prior to joining TELEO Capital full-time, Matthew worked for the firm as a summer intern for two years.",
+        "Matthew earned a B.S. in Economics with concentrations in Finance and Business Analytics from the Wharton School of the University of Pennsylvania, where he graduated summa cum laude."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "Lauren Chamberlain",
+      "role": "Associate",
+      "li": "https://www.linkedin.com/in/lauren-chamberlain120",
+      "bio": [
+        "Lauren Chamberlain is an Associate at TELEO Capital. Lauren's primary responsibilities include deal qualification, due diligence, transaction support and execution, and portfolio monitoring. Before joining TELEO Capital, Lauren worked as a Corporate Development Manager at onXmaps, a consumer software company focused on outdoor recreation, where she evaluated and executed strategic initiatives and M&A opportunities. Prior to that, she was an Investment Banking Analyst at TD Cowen, where she primarily supported middle-market software M&A and growth equity transactions.",
+        "Lauren graduated magna cum laude with a B.S. in Economics, concentrating in Finance, from California Polytechnic State University, San Luis Obispo."
+      ]
+    },
+    {
+      "group": "Investment Team",
+      "name": "David Mertz",
+      "role": "Analyst",
+      "li": "https://www.linkedin.com/in/david-mertz-7256941a6",
+      "bio": [
+        "David is an Analyst at TELEO Capital. Prior to joining TELEO, David worked as a summer intern at RCLCO Fund Advisors and was a Swimmer at the University of Southern California, serving 2 years as Captain.",
+        "David earned a B.A. in Economics with a minor in Business Finance from the University of Southern California."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Venu Vasudevan",
+      "role": "Head of AI",
+      "li": "https://www.linkedin.com/in/venuvasudevan",
+      "bio": [
+        "Venu Vasudevan is the Head of AI at TELEO Capital, where he leads the firm's artificial intelligence strategy and execution across both diligence and the portfolio. Venu co-leads TELEO's AI Committee and oversees the firm's AI Center of Excellence, helping portfolio companies build and deploy AI across their products and operations.",
+        "Venu brings decades of experience at the intersection of AI, machine learning, and large-scale data. Prior to TELEO Capital, he was Senior Director of Data Science & AI Research at Procter & Gamble, where he led the company's R&D data science and AI organization. Earlier, he was VP of Data Science at Lightpad, an IoT startup acquired by a Google Ventures-backed company; built a video analytics and machine learning platform acquired by Comcast; and was a founding member of the team behind the Zigbee IoT standard at Motorola, where he also served on the company's Science Advisory Board.",
+        "Venu earned a Ph.D. in Computer Science from The Ohio State University and serves as an adjunct professor in the Electrical and Computer Engineering department at Rice University. He holds 14 issued patents and advises AI startups."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Catalin Olteanu",
+      "role": "Portfolio CTO",
+      "li": "https://www.linkedin.com/in/colteanu",
+      "bio": [
+        "Catalin Olteanu is the Portfolio CTO at TELEO Capital. Catalin focuses primarily on due diligence, transaction support, and helping portfolio companies with expertise on technology, services, and operations. Prior to joining TELEO Capital, Catalin worked as a Senior Managing Director at North Highland, supervising their Strategic Portfolio Management division, and as CEO at UMT360, a TELEO company acquired by North Highland. Catalin has 25+ years of experience in building and growing software and tech-enabled service organizations.",
+        "Catalin has a Computer Science degree from the Politehnica University of Bucharest, Romania."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Matt Katz",
+      "role": "Portfolio COO",
+      "li": "https://www.linkedin.com/in/matthew-katz-609293",
+      "bio": [
+        "Matt Katz is the Portfolio COO and a seasoned operating executive with more than two decades of leadership experience in the technology industry. He brings deep expertise in strategic planning, go-to-market strategy, business operations, marketing and analytics, corporate development, and financial analysis. In his role at TELEO, Matt works with portfolio company leadership to drive growth, optimize go-to-market execution, and implement scalable processes that deliver sustainable value creation.",
+        "Prior to joining TELEO, Matt spent nearly a decade at DocuSign, where he helped grow the company from approximately $200 million to nearly $3 billion in revenue. Earlier in his career, he held leadership roles at HP and CA Technologies (later acquired by Broadcom) and began his career in investment banking and equity research at Credit Suisse, focusing on software and SaaS companies.",
+        "Matt earned a B.S. in Finance and Accounting from the Wharton School of Business at the University of Pennsylvania, graduating magna cum laude. He is also a CFA charterholder."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Cal Taylor",
+      "role": "Portfolio CFO",
+      "li": "https://www.linkedin.com/in/cal-taylor-6768255a",
+      "bio": [
+        "Cal Taylor is the Portfolio CFO and has previously held multiple CFO roles at institutionally held private companies, ranging from $50M-$750M in revenue, as well as executive finance roles within large public companies over $1Bn in revenue. He brings over 15 years of financial and operational leadership experience across several sectors.",
+        "Cal has been involved in over a dozen M&A transactions contributing both as the lead acquirer as well as integrating from the target company. Cal partners with management teams to provide strategic alignment, to enhance decision making through data driven insight, to align cost structures to market opportunities, and to provide reporting that instills a high degree of accountability and execution at all levels of the organization. He has a passion for team building and Human Capital management, having built high performing teams from scratch as well as up-leveling and integrating teams during post-merger integration.",
+        "Cal earned a B.S. in Accounting from Weber State University, as well as an M.B.A. from the Goddard School of Business while participating as a Division 1 (FCS) Football player. He was all conference academic and team. Cal holds a C.P.A. license (inactive) in the state of Utah."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Vlad Vecerzan",
+      "role": "Director, Product Management",
+      "li": "https://www.linkedin.com/in/vlad-vecerzan",
+      "bio": [
+        "Vlad Vecerzan is a Director of Product Management at TELEO Capital, where he works with portfolio companies to build and scale their product organizations. He advises on organizational alignment, product strategy, roadmap and release planning, and process improvement.",
+        "Vlad's background is rooted in enterprise software and product leadership, most recently as Senior Director of Product Management at North Highland, where he successfully led a multi-year product modernization effort. He has also seen the TELEO model from the operating side. He spent more than 10 years at UMT360, a TELEO portfolio company, where he led the company's strategic portfolio management product, scaled product operations, and completed the post-acquisition product integration after its sale to North Highland.",
+        "Vlad holds a B.S. in Electronics and Telecommunications from the Technical University of Cluj-Napoca, Romania."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Kevin Hatch",
+      "role": "Operating Partner",
+      "li": "https://www.linkedin.com/in/khatch",
+      "bio": [
+        "Kevin Hatch is an Operating Partner at TELEO Capital with over 20 years of financial, operational, and executive leadership experience, including a decade working with private equity portfolio companies. He has led multiple strategic growth initiatives, restructurings, and carve-outs across software, technology, business services, and industrial companies.",
+        "Kevin most recently served as an executive of Avalex Technologies Corp., leading transformational growth focused on maximizing the value of their market-leading technology and completed a successful acquisition of Avalex by Mercury Systems, Inc. Prior to Avalex, Kevin served as CFO/Acting CEO of AppRiver, a Marlin Equity Partners portfolio company, where he was instrumental in building the company's leadership team, partner-focused go-to-market strategy and operational KPI transformation. He led two strategic add-on acquisitions and the successful acquisition of AppRiver by Zix Corporation.",
+        "Kevin previously worked as an Operations Director at Marlin Equity Partners, where he was responsible for the value creation activities and operational results for portfolio companies. Before joining Marlin, Kevin worked at KPMG as a Director in the Transaction Services Group, assisting both strategic and private equity buyers.",
+        "Kevin earned a B.A. from Fort Lewis College."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "David Casares",
+      "role": "Managing Director",
+      "li": "https://www.linkedin.com/in/dacas12",
+      "bio": [
+        "David Casares is a Managing Director at TELEO Capital. David's primary responsibilities include investment qualification, evaluation, execution, portfolio operations, and acquisition integration.",
+        "David joined TELEO Capital from Vicente Capital Partners, where he was a Partner focused on deal sourcing, execution, portfolio operational improvements, and monitoring. While at Vicente, David served on the boards of several software and technology companies, including Intellectual Technology, SportsMEDIA Technology, and VXi Corporation.",
+        "Previously, David was Director of M&A and Operational Improvements for a $2 billion subsidiary of Tyco Fire and Security, where he led operational improvements at over 120 field offices. Prior to Tyco, he began his career in management consulting at Bain & Co. and in investment banking at Merrill Lynch in the financial institutions and insurance group, where he focused on mergers and acquisitions and capital raises.",
+        "Active in the non-profit community, David serves on the Board of Directors for the Fulfillment Fund (college access and graduation non-profit) as Audit Chair and Executive Committee Member. He is also on the Finance Council of St. Monica Church.",
+        "David earned an M.B.A. from Harvard University, where he was a Robert Toigo Foundation Fellow, and a B.A. in Finance from Georgetown University, where he was a four-year NCAA athlete in football and baseball."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "David McCauley",
+      "role": "Managing Director",
+      "li": "https://www.linkedin.com/in/david-mccauley-openteam",
+      "bio": [
+        "David McCauley is a Managing Director at TELEO Capital. David's primary responsibilities include call center integration, go-to-market implementation, deal qualification, and technology implementations. Prior to joining TELEO Capital, David worked as a consultant for a variety of organizations in industries including consumer products, SaaS, computer hardware and technology manufacturing, data center, and cyber security. He has also been deeply involved in startup corporations as they grow and evolve from first funding, to mergers and acquisitions and private equity, and to eventual IPO or acquisition.",
+        "David earned an M.A. from the University of Kansas and a B.A. from the University of Arizona."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Erin Dobson",
+      "role": "Finance Director",
+      "li": "https://www.linkedin.com/in/erin-warwick-1b441871",
+      "bio": [
+        "Erin Dobson is a Finance Director at TELEO Capital. Her primary responsibilities include financial due diligence, support, and advisement on business processes for portfolio companies. Prior to joining TELEO Capital, Erin was an Accounting Manager at Fisher's Technology for over six years. Her responsibilities included oversight of the accounting department, annual audit, board reporting, accounts receivable and accounts payable, as well as special financial projects for three acquisitions made by the company. Prior to Fisher's Technology, Erin held accounting-related roles at Marlin Equity Partners.",
+        "Erin received a B.B.A. in Accounting from Boise State University."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Michelle Esters",
+      "role": "Finance Director",
+      "li": "https://www.linkedin.com/in/michelle-esters-03400b73",
+      "bio": [
+        "Michelle Esters is a Finance Director at TELEO Capital. Her primary responsibilities include financial due diligence, support, and advisement on business processes for portfolio companies. Prior to joining TELEO Capital, Michelle was an Accounting Supervisor in the Engineered Wood Products (EWP) Department at Boise Cascade Company. Additionally, she held positions in Internal Audit and Accounts Payable during her seven years with the company. Michelle's responsibilities included managing customer rebate contracts, general ledger accounting for the EWP business, and managing accounting team members. While in Internal Audit, she provided process and internal control recommendations, completed audits across many company functions, and assisted with two acquisitions made by the company.",
+        "Michelle earned a B.S. in Accounting from Weber State University, where she played on the women's tennis team for four years."
+      ]
+    },
+    {
+      "group": "Operating Team",
+      "name": "Emma Earl",
+      "role": "Investor Relations",
+      "li": "https://www.linkedin.com/in/emma-earl-3b70a1193",
+      "bio": [
+        "Emma is the Head of Investor Relations at TELEO Capital, where she manages investor communications, oversees AGM preparation and planning, and supports projects across the organization. She began her career at Goldman Sachs as an Analyst in the External Investment Group, focusing on private equity secondary investments. Prior to joining TELEO Capital, she spent time as an Associate at A10 Capital working in Asset Management.",
+        "Emma earned a B.S. in Accounting from the University of Utah, where she was a member of the Cross Country and Track & Field teams."
+      ]
+    }
+  ],
+  "news": [
+    {
+      "date": "June 23, 2026",
+      "slug": "acquires-modersys",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital acquires Modersys (f/k/a SmartFactory Rx) from Applied Materials",
+      "summary": "TELEO today announced the acquisition of SmartFactory Rx, a leading pharmaceutical manufacturing intelligence platform, from Applied Materials, Inc.",
+      "source": "https://www.prnewswire.com/news-releases/teleo-capital-acquires-pharmaceutical-manufacturing-intelligence-platform-modersys-fka-smartfactory-rx-from-applied-materials-302807327.html",
+      "external": true
+    },
+    {
+      "date": "June 17, 2026",
+      "slug": "flatirons-acquires-scope-ar",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Flatirons Solutions acquires Scope AR",
+      "summary": "TELEO announced the acquisition of Scope AR by its existing portfolio company, Flatirons Solutions, uniting two complementary products into a single industrial AI platform.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company_Flatirons_Solutions_Acquires_Scope_AR.html"
+    },
+    {
+      "date": "December 4, 2025",
+      "slug": "sharpen-acquires-ytel",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Sharpen acquires Ytel",
+      "summary": "TELEO announced the acquisition of Ytel, Inc., a recognized leader in cloud-based communications platforms, by its portfolio company Sharpen Technologies.",
+      "source": "https://www.prnewswire.com/news-releases/teleo-capital-portfolio-company-sharpen-acquires-ytel-302633276.html",
+      "external": true
+    },
+    {
+      "date": "November 20, 2025",
+      "slug": "acquires-exfo-asa-numodata",
+      "cat": "Platform Acquisition",
+      "title": "TELEO acquires EXFO's ASA division, establishing NumoData",
+      "summary": "TELEO announced the acquisition and formation of NumoData from EXFO, opening a new chapter in AI-driven service assurance innovation, with EXFO retaining a minority stake.",
+      "source": "https://teleocapital.com/TELEO_CAPITAL_ACQURES_EXFO'S_ASA_DIVISION.html"
+    },
+    {
+      "date": "November 6, 2025",
+      "slug": "closes-fund-ii-350m",
+      "cat": "Fund News",
+      "title": "TELEO Capital closes oversubscribed Fund II at $350M hard cap",
+      "summary": "TELEO announced the final close of TELEO Capital Fund II at its hard cap of $350 million in Limited Partner capital commitments.",
+      "source": "https://teleocapital.com/TELEO_CAPITAL_CLOSES_OVERSUBSCRIBED_FUND_II_AT_$350M.html"
+    },
+    {
+      "date": "October 6, 2025",
+      "slug": "softrax-acquires-blulogix",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Softrax acquires BluLogix",
+      "summary": "TELEO announced the acquisition of BluLogix LLC by its existing portfolio company, SOFTRAX, uniting two innovative revenue management and billing platforms.",
+      "source": "https://www.prnewswire.com/news-releases/teleo-capital-portfolio-company-softrax-acquires-blulogix-302577191.html",
+      "external": true
+    },
+    {
+      "date": "April 3, 2025",
+      "slug": "robert-shilton-joins",
+      "cat": "Firm News",
+      "title": "TELEO Capital adds Robert Shilton as Principal",
+      "summary": "TELEO Capital is pleased to announce the addition of Rob Shilton as a Principal to our investment team. Rob is a senior technology investor with over 12 years of experience partnering with high-growth technology and software companies.",
+      "source": "https://www.teleocapital.com/Robert_Shilton-joins-teleo_capital.html"
+    },
+    {
+      "date": "March 10, 2025",
+      "slug": "2024-year-in-review",
+      "cat": "Firm News",
+      "title": "TELEO Capital 2024 year in review",
+      "summary": "2024 was a year of reflection and exciting progress. Since inception, we have closed 19 transactions and now manage over $500M in assets. Our portfolio companies continued to perform strongly, independent of macro headwinds, especially in the cyber security, aviation software, and healthcare sectors.",
+      "source": "https://www.teleocapital.com/teleo_capital-2024_year_in_review.html"
+    },
+    {
+      "date": "February 27, 2025",
+      "slug": "acquisition-of-softrax",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital announces acquisition of Softrax from TELUS",
+      "summary": "Boise, ID, February 27, 2025, TELEO Capital Management, LLC (\"TELEO\") announced the acquisition of SOFTRAX, an industry leader in revenue management software solutions, from TELUS Corporation (\"TELUS\").",
+      "source": "https://www.teleocapital.com/teleo_capital_announces_acquisition_of_SOFTRAX.html"
+    },
+    {
+      "date": "March 14, 2024",
+      "slug": "rand-mcnally-acquires-safetydirect",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Rand McNally acquires SafetyDirect from Bendix CVS",
+      "summary": "Boise, ID, March 14, 2024, TELEO Capital has announced the acquisition of the SafetyDirect connectivity product line, portal, and operations from Bendix Commercial Vehicle Systems LLC, by its existing portfolio company, Rand McNally.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company_rand_mcnally_acquires_safetydirect_from_bendix_cvs.html"
+    },
+    {
+      "date": "January 25, 2024",
+      "slug": "2023-year-in-review",
+      "cat": "Firm News",
+      "title": "TELEO Capital 2023 year in review",
+      "summary": "In 2023, TELEO Capital celebrated a year marked by significant achievements. The year was characterized by a focus on follow-on acquisitions, with the announcement of three new strategic investments, underscoring our commitment to our buy-and-build strategy.",
+      "source": "https://www.teleocapital.com/teleo_capital-2023_year_in_review.html"
+    },
+    {
+      "date": "November 15, 2023",
+      "slug": "sharpen-acquires-plum-voice",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Sharpen acquires Plum Voice",
+      "summary": "Boise, ID, November 15, 2023, TELEO Capital has announced the acquisition of The Plum Group, Inc. (\"Plum Voice\"), a recognized leader in AI-driven voice-based customer interaction technology, by its existing portfolio company, Sharpen Technologies Inc.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company_sharpencx_acquires_plum_voice.html"
+    },
+    {
+      "date": "October 30, 2023",
+      "slug": "wellcove-acquires-assuricare",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Wellcove acquires AssuriCare",
+      "summary": "Boise, ID, October 30, 2023, TELEO Capital has announced the acquisition of AssuriCare, LLC, a provider of electronic visit verification and nurse assessment software and services.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company_wellcove_acquires_assuricare.html"
+    },
+    {
+      "date": "May 24, 2023",
+      "slug": "sharpen-acquires-webtext",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Sharpen acquires Webtext",
+      "summary": "Boise, ID, May 24, 2023, TELEO Capital announced the acquisition of Webtext Holdings Limited, an omnichannel messaging software solution, by its existing portfolio company, Sharpen Technologies.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company-sharpencx_acquires_webtext.html"
+    },
+    {
+      "date": "January 26, 2023",
+      "slug": "2022-year-in-review",
+      "cat": "Firm News",
+      "title": "TELEO Capital 2022 year in review",
+      "summary": "2022 was a year of continued growth for our firm. We announced 2 new platform investments and gained momentum with our buy-and-build strategy by completing 3 follow-on acquisitions.",
+      "source": "https://www.teleocapital.com/teleo_capital-2022_year_in_review.html"
+    },
+    {
+      "date": "December 13, 2022",
+      "slug": "control-investment-sharpen",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital completes control investment in Sharpen Technologies",
+      "summary": "Boise, ID, December 13, 2022, TELEO Capital announced a majority control investment in Sharpen Technologies Inc. (\"SharpenCX\"). SharpenCX offers a cloud-native contact center platform.",
+      "source": "https://www.teleocapital.com/teleo_capital_completes_control_investment_in_sharpen_technologies.html"
+    },
+    {
+      "date": "June 29, 2022",
+      "slug": "univeris-acquires-techrules",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Univeris acquires TechRules",
+      "summary": "Boise, ID, June 29, 2022, TELEO Capital announced the acquisition of TechRules, S.A., a leading provider of global wealth management software solutions. TechRules will be merged with Univeris.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company-univeris_acquires_techrules.html"
+    },
+    {
+      "date": "April 12, 2022",
+      "slug": "rand-mcnally-acquires-fleetsu",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company Rand McNally acquires Fleetsu",
+      "summary": "Boise, ID, April 12, 2022, TELEO Capital announced the acquisition of Fleetsu Pty Ltd. by its existing portfolio company, Rand McNally. Fleetsu is a cloud-based, data analytics fleet management solution provider.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company-rand_mcnally_acquires_fleetsu.html"
+    },
+    {
+      "date": "March 23, 2022",
+      "slug": "acquisition-of-chcs",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital announces acquisition of CHCS Services",
+      "summary": "Boise, ID, March 23, 2022, TELEO Capital announced the acquisition of CHCS Services, Inc. from Capgemini America, Inc. CHCS is a leading technology-enabled third-party administrator (TPA) for the senior health and eldercare market.",
+      "source": "https://www.teleocapital.com/teleo_capital_announces_acquisition_of_CHCS_services.html"
+    },
+    {
+      "date": "March 9, 2022",
+      "slug": "kevin-hatch-joins",
+      "cat": "Firm News",
+      "title": "TELEO Capital adds Kevin Hatch as Operating Partner",
+      "summary": "TELEO Capital is pleased to announce Kevin Hatch has joined the firm as an Operating Partner. Mr. Hatch brings over 20 years of financial, operational, and executive leadership experience.",
+      "source": "https://www.teleocapital.com/Kevin_Hatch-joins-teleo_capital.html"
+    },
+    {
+      "date": "February 23, 2022",
+      "slug": "umt360-acquires-western-principles",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company UMT360 acquires Western Principles",
+      "summary": "Boise, ID, February 23, 2022, TELEO Capital announced the acquisition of Western Principles Consulting, Inc., a leading Canadian-based Project Portfolio Management firm, by its existing portfolio company, UMT360.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company-umt360_acquires_western_principles.html"
+    },
+    {
+      "date": "January 1, 2022",
+      "slug": "2021-year-in-review",
+      "cat": "Firm News",
+      "title": "TELEO Capital 2021 year in review",
+      "summary": "2021 was a year of execution for TELEO Capital. We expanded our portfolio of investments by completing several platform acquisitions and a follow-on acquisition. In addition, we further strengthened our Boise and Los Angeles offices with the addition of 6 new team members across our sourcing, execution, and tactical advisory functions.",
+      "source": "https://www.teleocapital.com/teleo_capital-2021_year_in_review.html"
+    },
+    {
+      "date": "December 15, 2021",
+      "slug": "umt360-acquires-fios",
+      "cat": "Add-On Acquisition",
+      "title": "Portfolio company UMT360 acquires FIOS Insight",
+      "summary": "Boise, ID, December 15, 2021, TELEO Capital announced the acquisition of FIOS Insight LLC, a leading Enterprise Architecture software tool, by its existing portfolio company, UMT360.",
+      "source": "https://www.teleocapital.com/teleo_capital_portfolio_company-umt360_acquires_fios_insight.html"
+    },
+    {
+      "date": "November 9, 2021",
+      "slug": "investment-in-flatirons",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital completes growth equity investment in Flatirons Solutions",
+      "summary": "Boise, ID, November 9, 2021, TELEO Capital announced the acquisition of Flatirons Solutions, Inc. from Presse Participations.",
+      "source": "https://www.teleocapital.com/teleo-completes-growth-equity-investment-in-flatirons_solutions.html"
+    },
+    {
+      "date": "June 29, 2021",
+      "slug": "investment-in-univeris",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital completes growth equity investment in Univeris Corporation",
+      "summary": "TELEO Capital announced the completion of a significant growth equity investment in Univeris Corporation.",
+      "source": "https://www.teleocapital.com/teleo-completes-significant-growth-equity-investment-in-univeris.html"
+    },
+    {
+      "date": "May 26, 2021",
+      "slug": "esg-community-initiatives",
+      "cat": "Firm News",
+      "title": "ESG & community initiatives",
+      "summary": "TELEO Capital is excited to announce a new social impact initiative being launched in partnership with CareerSpring, an organization that works to unlock the employment potential of college students.",
+      "source": "https://www.teleocapital.com/teleo_capital-esg_&_community_initiatives.html"
+    },
+    {
+      "date": "May 5, 2021",
+      "slug": "investment-in-teesnap",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital completes growth equity investment in Teesnap",
+      "summary": "Los Angeles, CA, May 5, 2021, TELEO Capital announced a significant growth equity investment in Teesnap, LLC, a golf course operations management software platform.",
+      "source": "https://www.teleocapital.com/teleo-completes-significant-growth-equity-investment-in-teesnap.html"
+    },
+    {
+      "date": "January 21, 2021",
+      "slug": "2020-year-in-review",
+      "cat": "Firm News",
+      "title": "TELEO Capital 2020 year in review",
+      "summary": "2020 was a monumental year for TELEO Capital. Our inaugural fundraise (TELEO Capital LP) was successfully completed in November, reaching $250M from a blue-chip roster of institutional limited partners.",
+      "source": "https://www.teleocapital.com/teleo_capital-2020_year_in_review.html"
+    },
+    {
+      "date": "November 18, 2020",
+      "slug": "closes-inaugural-fund-250m",
+      "cat": "Fund News",
+      "title": "TELEO Capital, LP closes $250 million inaugural fund",
+      "summary": "Boise, ID and Los Angeles, CA, November 18, 2020, TELEO Capital Management, LLC, a leading operationally focused private equity firm, has announced the closing of TELEO Capital, LP (the \"Fund\"). The Fund was oversubscribed and closed at its hard cap of $250 million.",
+      "source": "https://www.prnewswire.com/news-releases/teleo-capital-lp-closes-250-million-inaugural-fund-301175627.html",
+      "external": true
+    },
+    {
+      "date": "November 10, 2020",
+      "slug": "acquires-rand-mcnally",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital acquires Rand McNally",
+      "summary": "Los Angeles, CA, November 10, 2020, TELEO Capital announced today the acquisition of Rand McNally, a leader in transportation technology.",
+      "source": "https://www.prnewswire.com/news-releases/teleo-capital-completes-acquisition-of-rand-mcnally-301169005.html",
+      "external": true
+    },
+    {
+      "date": "February 21, 2020",
+      "slug": "john-mccormack-joins",
+      "cat": "Firm News",
+      "title": "John McCormack joins TELEO Capital",
+      "summary": "TELEO Capital is pleased to spotlight John McCormack. John brings over 25 years of executive leadership experience in the cybersecurity and internet infrastructure sectors.",
+      "source": "https://www.teleocapital.com/John_McCormack-joins-teleo_capital.html"
+    },
+    {
+      "date": "January 29, 2020",
+      "slug": "2019-year-in-review",
+      "cat": "Firm News",
+      "title": "Happy New Year from TELEO Capital",
+      "summary": "2019 was a very productive year. We completed 3 platform acquisitions, expanded the team to 12, and most importantly, strengthened our team-oriented culture.",
+      "source": "https://www.teleocapital.com/teleo_capital-2019_year_in_review.html"
+    },
+    {
+      "date": "January 24, 2020",
+      "slug": "acquisition-of-industrial-defender",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital completes acquisition of Industrial Defender from Capgemini America",
+      "summary": "Based in Foxboro, MA, Industrial Defender provides cybersecurity and compliance software solutions for critical infrastructure. TELEO Capital completed the acquisition of Industrial Defender from Capgemini America.",
+      "source": "https://www.teleocapital.com/teleo-completes-the-acquisition-of-industrial_defender.html"
+    },
+    {
+      "date": "September 5, 2019",
+      "slug": "matt-oehlmann-joins",
+      "cat": "Firm News",
+      "title": "Matt Oehlmann joins TELEO Capital",
+      "summary": "Matt Oehlmann joins TELEO Capital. Matt brings over 15 years of direct investing experience in the lower middle market.",
+      "source": "https://www.teleocapital.com/Matt_Oehlmann-joins-teleo_capital.html"
+    },
+    {
+      "date": "July 29, 2019",
+      "slug": "operating-partner-spotlight-joe-roark",
+      "cat": "Firm News",
+      "title": "TELEO Capital Operating Partner spotlight: Joe Roark",
+      "summary": "TELEO Capital is pleased to spotlight Joe Roark. Joe brings over 35 years of executive leadership experience with such companies as Danaher.",
+      "source": "https://www.teleocapital.com/teleo_capital_operating_partner_spotlight-Joe_Roark.html"
+    },
+    {
+      "date": "June 27, 2019",
+      "slug": "acquires-paxia",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital acquires onboard services and supply chain software business from e-gatematrix",
+      "summary": "Los Angeles, CA, June 27, 2019, TELEO Capital completed the acquisition of the onboard services and supply chain software business (Paxia) from e-gatematrix LLC. Paxia is a leading provider of enterprise SaaS applications that manage the inflight catering services supply chain.",
+      "source": "https://www.teleocapital.com/teleo-completes-the-acquisition-of-paxia.html"
+    },
+    {
+      "date": "March 11, 2019",
+      "slug": "acquires-umt360",
+      "cat": "Platform Acquisition",
+      "title": "TELEO Capital acquires UMT360",
+      "summary": "Los Angeles, CA, March 11, 2019, TELEO Capital announced the completion of its acquisition of UMT360 (\"UMT\"). Based in Bellevue, Washington, UMT is a leading provider of enterprise portfolio financial management software.",
+      "source": "https://www.teleocapital.com/teleo-completes-the-acquisition-of-umt360.html"
+    }
+  ],
+  "community": [
+    {
+      "name": "Boise Rescue Mission Ministries",
+      "url": "https://boiserm.org",
+      "desc": "The Rescue Mission is committed to caring for every man, woman, and child in need across the Treasure Valley, no matter where they are at in life. If someone is homeless or struggling and in need of a hot meal or a safe place to stay, he or she can visit their shelters with no prior arrangements necessary. The Rescue Mission also offers services and programs for Women and Children, Veterans, and those with addictions. While the Rescue Mission provides meals, shelter, and clothing, they also care for the emotional, mental, and spiritual needs of individuals and families."
+    },
+    {
+      "name": "CareerSpring",
+      "url": "https://careerspring.org",
+      "desc": "CareerSpring addresses the combined needs of first-generation college students and our rapidly evolving labor market as an incredible opportunity to facilitate the movement of underemployed Americans into jobs that maximize their potential, provide a living wage, and the dignity of meaningful work. CareerSpring has a network of employers, colleges, high schools, and community organizations to help provide the career information, social capital, and job placement services that unlock the employment potential of first-generation students."
+    },
+    {
+      "name": "Cristo Rey Jesuit",
+      "url": "https://cristoreyjesuit.org",
+      "desc": "Cristo Rey Jesuit was started in 2009 by founding President Fr. TJ Martinez, SJ with an inaugural class of 82 students; today, they have 530 students enrolled. Cristo Rey Jesuit exists to inspire and prepare students of limited economic resources to succeed in college and lead their communities as compassionate, committed, and competent men and women for others."
+    },
+    {
+      "name": "Hume & FCA",
+      "url": "https://hume.org",
+      "desc": "Hume Lake Christian Camps and Fellowship of Christian Athletes (FCA) have partnered together for over 15 years, creating Team Sports Camps. These camps help create successful teams by challenging individual student-athletes physically, mentally, and spiritually. They teach students that integrity, character, and leadership are fundamental to becoming an athlete worthy of the trust and respect of their team."
+    },
+    {
+      "name": "Idaho Youth Ranch",
+      "url": "https://youthranch.org",
+      "desc": "Idaho Youth Ranch unites Idaho's youth by providing accessible programs and services that nurture hope, healing, and resilience. Since the day Reverend James Crowe and his wife Ruby Carey Crowe started a boys' ranch in the desert outside Rupert in the 1950s, Idaho Youth Ranch has grown into a state-wide multi-service agency serving at-risk boys, girls, and their families."
+    },
+    {
+      "name": "One Challenge",
+      "url": "https://onechallenge.org",
+      "desc": "One Challenge is an inter-denominational, international, Christian faith mission-sending agency. OC empowers local church ministries in more than 100 countries around the world. With more than 500 mission workers, OC is involved in Missions Mobilization, Church Planting & Growth, Education, Holistic Ministry, Leadership Development, Member Care, Partnering and Bridge Building, Research, Sports Ministries, and Business Transformation."
+    }
+  ]
+}

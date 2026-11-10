@@ -1,0 +1,1188 @@
+{
+  "home": {
+    "title": "Empowering businesses to perform and execute",
+    "description": "TELEO Capital is an operationally focused lower-middle-market private equity firm providing capital, strategic thought, and operational resources.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Operators with Capital",
+        "heading": "We acquire and build complex software and technology businesses",
+        "ctas": [
+          {
+            "label": "Our Strategy",
+            "href": "/strategy"
+          },
+          {
+            "label": "Get in Touch",
+            "href": "/contact"
+          }
+        ],
+        "ledes": [
+          "An operator-led private equity firm with particular depth in corporate carve-outs."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Why TELEO",
+        "heading": "What sets us apart",
+        "items": [
+          {
+            "title": "AI-Forward",
+            "href": "/ai",
+            "desc": "A dedicated AI team, committee, and Center of Excellence putting AI to work across every portfolio company.",
+            "cta": "Our AI strategy"
+          },
+          {
+            "title": "Carve-Out Expertise",
+            "href": "/sellers",
+            "desc": "Deep experience carving non-core divisions out of large corporations and standing them up as independent companies.",
+            "cta": "For corporate sellers"
+          },
+          {
+            "title": "Depth & Focus",
+            "href": "/team",
+            "desc": "Deep functional and vertical expertise, from a full operating bench to focused knowledge of software, healthcare IT, tech-enabled services, and industrial technology.",
+            "cta": "Meet the team"
+          },
+          {
+            "title": "Speed & Certainty",
+            "href": "/bankers",
+            "desc": "A fast, senior-led read and certainty of close, from the first conversation, even on the most complex deals.",
+            "cta": "For investment bankers"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Selected Work",
+        "heading": "Built into category leaders",
+        "ctas": [
+          {
+            "label": "View full portfolio",
+            "href": "/portfolio"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "News",
+        "heading": "Recent announcements",
+        "ctas": [
+          {
+            "label": "All news",
+            "href": "/news"
+          }
+        ]
+      }
+    ]
+  },
+  "firm": {
+    "title": "The Firm",
+    "description": "The meaning behind the name. TELEO backs overlooked, under-resourced businesses and takes on the complexity others avoid.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Our Philosophy",
+        "heading": "The meaning behind the name",
+        "ledes": [
+          "te·le·o: verb, from Greek ΤΕΛΕΩ. To perform, to execute, to bring to completion.",
+          "A commitment to take on complex situations alongside management."
+        ]
+      },
+      {
+        "kind": "section",
+        "stats": [
+          {
+            "pre": "Over",
+            "value": "$750M",
+            "label": "Assets Under Management"
+          },
+          {
+            "pre": "Active",
+            "value": "10",
+            "label": "Platform Companies"
+          },
+          {
+            "pre": "Involved in",
+            "value": "100+",
+            "label": "Total Transactions"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Our Approach",
+        "heading": "Three capabilities that set us apart",
+        "items": [
+          {
+            "num": "01",
+            "title": "Deep Sector Experience",
+            "href": "/portfolio",
+            "desc": "More than 25 years invested exclusively in software & technology, healthcare IT, technology-enabled services, and industrial technology.",
+            "cta": "Our Portfolio"
+          },
+          {
+            "num": "02",
+            "title": "Purpose-Built Team",
+            "href": "/team",
+            "desc": "Seasoned investors paired with a dedicated operating team giving management the strategic guidance and hands-on resources it needs to execute.",
+            "cta": "Meet the Team"
+          },
+          {
+            "num": "03",
+            "title": "Transactional Focus",
+            "href": "/strategy",
+            "desc": "Dedicated focus on highly complex opportunities others avoid, where experience, flexibility, creativity, and certainty matter most.",
+            "cta": "Our Strategy"
+          }
+        ],
+        "ledes": [
+          "Deep sector focus and a purpose-built operating team, working alongside management to build value."
+        ]
+      },
+      {
+        "kind": "band",
+        "eyebrow": "Who We Are",
+        "heading": "Investors and operators, drawn to complexity",
+        "ctas": [
+          {
+            "label": "Meet the Team",
+            "href": "/team"
+          }
+        ],
+        "ledes": [
+          "Hard working and not afraid to roll up our sleeves. Our team and culture are built around judgment, curiosity, and the willingness to go find the answer rather than wait for it."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "How We Work",
+        "heading": "In the business from day one",
+        "ctas": [
+          {
+            "label": "Our Culture",
+            "href": "/culture"
+          }
+        ],
+        "ledes": [
+          "Investors and operators work the same deal from the same room, from day one through exit. One team, one vision, and one plan of execution from day one through exit."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "In the Community",
+        "heading": "Time, Talent, and Treasure",
+        "ctas": [
+          {
+            "label": "Our Responsibility",
+            "href": "/responsibility"
+          }
+        ],
+        "ledes": [
+          "We give our time, talent, and treasure to the communities we call home. Our leadership and team are intimately involved in the following organizations."
+        ]
+      },
+      {
+        "kind": "contact"
+      }
+    ]
+  },
+  "culture": {
+    "title": "Culture & Careers",
+    "description": "Who thrives at TELEO, how we work, and how we hire. Accountable, curious, and gritty investors and operators drawn to complexity.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Our Culture",
+        "heading": "We take pride in our people",
+        "ledes": [
+          "TELEO is not built on individuality; it's built on collective success. We strive to foster a winning culture of respect, hard work, and curiosity to attract and retain exceptional people."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Who We Are",
+        "heading": "Our Principles",
+        "items": [
+          {
+            "title": "Accountability",
+            "desc": "We do what we say, from diligence through exit. Real work, real accountability."
+          },
+          {
+            "title": "Curiosity",
+            "desc": "We ask hard questions and go find the answer rather than wait for it."
+          },
+          {
+            "title": "Grit",
+            "desc": "We roll up our sleeves and take on the hard work others avoid."
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Meet the Team",
+            "href": "/team"
+          }
+        ],
+        "ledes": [
+          "How we work, and what we look for."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Join Us",
+        "heading": "Come build with us",
+        "ctas": [
+          {
+            "label": "Apply Now",
+            "href": "mailto:espanneut@teleocapital.com?subject=TELEO%20Application&body=Please%20attach%20your%20resume%20to%20this%20email.%0A%0AName%3A%0APhone%3A%0AWhat%20draws%20you%20to%20TELEO%3A"
+          }
+        ],
+        "ledes": [
+          "If our principles resonate, we would like to hear from you. Email your resume and a note on what draws you to TELEO."
+        ],
+        "notes": [
+          "or email your resume to careers@teleocapital.com"
+        ]
+      }
+    ]
+  },
+  "responsibility": {
+    "title": "Responsibility",
+    "description": "Responsible investing and community. ESG is built into how TELEO invests, and we give time, talent, and treasure to the places we call home.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Responsibility",
+        "heading": "Responsible investing, rooted in community",
+        "ledes": [
+          "High standards and strong communities are not a side effort. They are built into how we invest and how we operate."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Responsible Investing",
+        "heading": "ESG built into how we invest",
+        "ledes": [
+          "TELEO Capital believes that in order to provide significant risk-adjusted returns to our investors, we need to be committed to the highest standards of business practices and ethical standards. We believe that introducing environmental, social, and corporate governance (\"ESG\") considerations to our investment process can be essential to creating value for our investors and developing more sustainable long-term success at our portfolio companies.",
+          "A wide range of ESG issues are addressed as part of the investment decision-making process, and these issues are managed post-investment. By incorporating ESG considerations into investment analysis and ownership practices, TELEO Capital can create additional value for all stakeholders and reduce the financial and reputational risks to which they are exposed."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Community",
+        "heading": "Organizations we support",
+        "ledes": [
+          "Our leadership and team give their time, talent, and treasure to the organizations below."
+        ]
+      }
+    ]
+  },
+  "strategy": {
+    "title": "Strategy",
+    "description": "Capital, strategic thought, and operational resources. Where and how TELEO Capital invests across four sectors and three regions.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Strategy",
+        "heading": "Built for complexity",
+        "ledes": [
+          "An operator-led firm that runs senior-led diligence and closes with certainty, on the timeline sellers need."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Primary Focus",
+        "heading": "Corporate carve-outs",
+        "ledes": [
+          "Non-core divisions of larger corporations are where we spend most of our time. We handle the separation, transition services, and stand-up to independent operations, and we move with the speed and certainty complex carve-outs demand. We bring the same operating discipline to special situations, buyouts, and buy-and-build."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Our Approach",
+        "heading": "From diligence through exit",
+        "items": [
+          {
+            "num": "01",
+            "title": "Diligence",
+            "desc": "A fast, senior-led read. Partners run commercial, financial, and operational diligence in parallel, with no separate investment committee to satisfy. We give a clear answer early."
+          },
+          {
+            "num": "02",
+            "title": "Structure & Close",
+            "desc": "Creative structures built around the deal in front of us, from corporate carve-outs to the special situations others pass on. Certainty of close, on the seller's timeline."
+          },
+          {
+            "num": "03",
+            "title": "Operate",
+            "desc": "Our operating team is in the business on day one, running the separation and the operating agenda alongside management, and using AI to accelerate diligence, separation, and value creation."
+          },
+          {
+            "num": "04",
+            "title": "Exit",
+            "desc": "We build durable, independent businesses and realize value through a disciplined, well-prepared exit."
+          }
+        ],
+        "ledes": [
+          "We are in the business end to end. Our investment and operating teams work the same deal from the first diligence call through a well-prepared exit, with no handoffs."
+        ]
+      },
+      {
+        "kind": "band",
+        "eyebrow": "Alongside Management",
+        "heading": "We partner with conviction",
+        "ledes": [
+          "Capital is the start. Our team works next to management on the operating agenda, week after week."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Value Creation",
+        "heading": "The engine behind the outcomes",
+        "items": [
+          {
+            "num": "01",
+            "title": "People",
+            "desc": "The right leadership and operating team, aligned, supported, and equipped to execute the plan."
+          },
+          {
+            "num": "02",
+            "title": "Product",
+            "desc": "Focused investment in the core product and platform to deepen the moat and unlock durable growth."
+          },
+          {
+            "num": "03",
+            "title": "Process",
+            "desc": "Operating discipline: reporting, KPIs, and a steady cadence that compounds performance over time."
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Meet the Operating Team",
+            "href": "/team"
+          }
+        ],
+        "ledes": [
+          "A dedicated operating team and a repeatable framework that drive durable, profitable, long-term growth."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Outcomes",
+        "heading": "Results, not just capital",
+        "ctas": [
+          {
+            "label": "View case studies",
+            "href": "/case-studies"
+          }
+        ],
+        "ledes": [
+          "The proof is in the businesses we have built and the value we have realized, from carve-outs stood up as independent companies to special situations turned into category leaders."
+        ]
+      },
+      {
+        "kind": "section",
+        "items": [
+          {
+            "kicker": "For Corporate Sellers",
+            "title": "Carve-outs, handled with care",
+            "href": "/sellers",
+            "desc": "Speed and certainty of close for non-core divisions and complex separations.",
+            "cta": "Learn more"
+          },
+          {
+            "kicker": "For Investment Bankers",
+            "title": "What to send us",
+            "href": "/bankers",
+            "desc": "Clear criteria, a fast read, and certainty to close. We are a repeat, reliable buyer.",
+            "cta": "Learn more"
+          }
+        ]
+      }
+    ]
+  },
+  "criteria": {
+    "title": "Investment Criteria",
+    "description": "What fits our thesis. TELEO's investment criteria: size, structures, sectors, and business characteristics we look for.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Strategy · Criteria",
+        "heading": "What fits our thesis",
+        "ledes": [
+          "Clear criteria, a fast and senior-led read, and certainty of close. Here is exactly what we look for, and what to send us."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Transaction Focus",
+        "heading": "Situations we seek",
+        "items": [
+          {
+            "kicker": "Primary Focus",
+            "title": "Corporate Carve-Outs",
+            "href": "/sellers",
+            "desc": "Non-core divisions separated from larger corporations and stood up as independent companies. The complex deals we know best, and where we spend most of our time.",
+            "cta": "For Corporate Sellers"
+          },
+          {
+            "kicker": "Complexity welcome",
+            "title": "Special Situations",
+            "desc": "Complex or time-sensitive situations where creativity, flexibility, and certainty of close matter most."
+          },
+          {
+            "kicker": "Established businesses",
+            "title": "Buyouts & Recapitalizations",
+            "desc": "Management and leveraged buy-outs and recapitalizations of established businesses."
+          },
+          {
+            "kicker": "Add-on strategy",
+            "title": "Buy-and-Build",
+            "desc": "Platforms with disciplined add-on strategies to accelerate scale and capability."
+          }
+        ],
+        "ledes": [
+          "We move quickly and close with certainty. If a situation fits the profile below, send it our way."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "The Box",
+        "heading": "Investment criteria",
+        "lists": [
+          {
+            "label": "Investment",
+            "items": [
+              "$10M to $75M equity per platform",
+              "$10M to $100M revenue",
+              "Profitability not required"
+            ]
+          },
+          {
+            "label": "Structures",
+            "items": [
+              "Corporate carve-outs",
+              "Special situations",
+              "Leveraged & management buy-outs",
+              "Operational partnerships",
+              "Buy-and-build"
+            ]
+          },
+          {
+            "label": "Industries",
+            "items": [
+              "Software & Technology",
+              "Healthcare IT",
+              "Tech-Enabled Services",
+              "Industrial Technology"
+            ]
+          },
+          {
+            "label": "Characteristics",
+            "items": [
+              "Recurring revenue",
+              "Scalable cost structure",
+              "Success-based capex",
+              "Underutilized or non-core assets"
+            ]
+          }
+        ],
+        "ledes": [
+          "Four dimensions define a fit. Meet most of these and we should talk."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Geography",
+        "heading": "Where we invest",
+        "items": [
+          {
+            "title": "North America",
+            "desc": "Our core market, coast to coast."
+          },
+          {
+            "title": "Western Europe",
+            "desc": "Cross-border carve-outs and platforms."
+          },
+          {
+            "title": "Australia & New Zealand",
+            "desc": "Select software and technology situations."
+          }
+        ],
+        "ledes": [
+          "A global mandate, anchored in North America."
+        ]
+      },
+      {
+        "kind": "section",
+        "items": [
+          {
+            "kicker": "For Corporate Sellers",
+            "title": "Carve-outs, handled with care",
+            "href": "/sellers",
+            "desc": "Speed and certainty of close for non-core divisions and complex separations.",
+            "cta": "Learn more"
+          },
+          {
+            "kicker": "For Investment Bankers",
+            "title": "What to send us",
+            "href": "/bankers",
+            "desc": "Clear criteria, a fast read, and certainty to close. We are a repeat, reliable buyer.",
+            "cta": "Learn more"
+          }
+        ]
+      }
+    ]
+  },
+  "sellers": {
+    "title": "For Corporate Sellers",
+    "description": "A trusted home for your non-core division. Speed, certainty, and operational depth for clean carve-outs.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "For Corporate Sellers",
+        "heading": "A trusted home for your non-core division",
+        "ctas": [
+          {
+            "label": "Start a Conversation",
+            "href": "/contact"
+          }
+        ],
+        "ledes": [
+          "Divestitures are complex. We bring the speed, certainty, and operational depth to close clean carve-outs and care for the people who come with them."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Why Divest to TELEO",
+        "heading": "Carve-outs are our core competency",
+        "items": [
+          {
+            "num": "01",
+            "title": "Speed & Certainty",
+            "desc": "Efficient diligence, no committees. We move fast and close when we say we will."
+          },
+          {
+            "num": "02",
+            "title": "People & Relationships",
+            "desc": "We preserve key customer, vendor, and employee relationships through the transition."
+          },
+          {
+            "num": "03",
+            "title": "Operational Lift",
+            "desc": "Our operating team stands the business up as an independent company and invests in its next chapter."
+          }
+        ]
+      },
+      {
+        "kind": "band",
+        "eyebrow": "Care For Your People",
+        "heading": "The people come with the business",
+        "ledes": [
+          "We protect customer, vendor, and employee relationships through the transition, and give the team a strong new home."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "The Process",
+        "heading": "From conversation to clean close",
+        "items": [
+          {
+            "kicker": "Phase 01",
+            "title": "Diligence & Bid",
+            "desc": "Data processing and offer, then confirmatory diligence."
+          },
+          {
+            "kicker": "Phase 02",
+            "title": "Exclusivity",
+            "desc": "Separation planning; independent stand-up begins."
+          },
+          {
+            "kicker": "Phase 03",
+            "title": "Post-Close",
+            "desc": "Transition services kept short; investment behind growth."
+          }
+        ],
+        "ledes": [
+          "Our operating team reads data and submits offers quickly, then begins separation during exclusivity. Day-one readiness is largely complete at signing, so TSAs stay short."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Step by Step",
+        "heading": "Five steps to close",
+        "items": [
+          {
+            "num": "01",
+            "title": "Initial conversation",
+            "desc": "A direct, candid discussion of fit, value, and timeline, with senior partners rather than gatekeepers."
+          },
+          {
+            "num": "02",
+            "title": "Focused diligence",
+            "desc": "Commercial, financial, and tax diligence run efficiently and in parallel."
+          },
+          {
+            "num": "03",
+            "title": "Structuring & TSA",
+            "desc": "Creative structures and transition service agreements that de-risk separation."
+          },
+          {
+            "num": "04",
+            "title": "Certain close",
+            "desc": "Committed capital and a disciplined process deliver certainty of close."
+          },
+          {
+            "num": "05",
+            "title": "Stand-alone operations",
+            "desc": "Our operating team stands the business up and invests behind growth."
+          }
+        ]
+      }
+    ]
+  },
+  "bankers": {
+    "title": "For Investment Bankers",
+    "description": "An active, repeat buyer in the lower-middle-market. Send us complex situations for a fast, candid read.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "For Investment Bankers",
+        "heading": "What to send us",
+        "ctas": [
+          {
+            "label": "Submit a Deal",
+            "href": "mailto:cmartin@teleocapital.com"
+          }
+        ],
+        "ledes": [
+          "An active, repeat buyer built for complex carve-outs and special situations. Send them our way for a fast, candid read."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Situations We Like",
+        "heading": "Send us these",
+        "items": [
+          {
+            "title": "Corporate carve-outs & divestitures"
+          },
+          {
+            "title": "Founder & management buy-outs"
+          },
+          {
+            "title": "Special situations & complexity"
+          },
+          {
+            "title": "Under-managed or non-core assets"
+          },
+          {
+            "title": "Recurring-revenue software"
+          },
+          {
+            "title": "Tech-enabled & industrial services"
+          }
+        ],
+        "ctas": [
+          {
+            "label": "See our full criteria",
+            "href": "/criteria"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Why Work With Us",
+        "heading": "A buyer you can rely on",
+        "items": [
+          {
+            "title": "A fast, clean read",
+            "desc": "Senior partners review every opportunity. You get a real answer quickly."
+          },
+          {
+            "title": "Certainty to close",
+            "desc": "Committed Fund II capital and no bureaucratic committees."
+          },
+          {
+            "title": "Comfort with complexity",
+            "desc": "Carve-outs, TSAs, and special situations are our core competency."
+          },
+          {
+            "title": "A repeat buyer",
+            "desc": "An active platform with a disciplined add-on appetite, and we come back."
+          }
+        ]
+      },
+      {
+        "kind": "band",
+        "eyebrow": "A Repeat Buyer",
+        "heading": "We close, then we come back",
+        "ledes": [
+          "An active platform with committed Fund II capital and a disciplined add-on appetite."
+        ]
+      }
+    ]
+  },
+  "ai": {
+    "title": "Artificial Intelligence",
+    "description": "How TELEO Capital puts AI to work across the technology stack and throughout the organization: our conviction, our AI Committee, and our AI Center of Excellence.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Strategy · Artificial Intelligence",
+        "heading": "The greatest technological revolution of our lifetime",
+        "ledes": [
+          "We believe we are in the midst of the greatest technological revolution of our lifetime, and we are building for it."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Our Conviction",
+        "heading": "AI across the stack, throughout the organization",
+        "items": [
+          {
+            "num": "01",
+            "title": "In the product",
+            "desc": "We invest in AI capabilities that deepen each company's moat and expand what it can build and sell."
+          },
+          {
+            "num": "02",
+            "title": "In operations",
+            "desc": "We apply AI across engineering, go-to-market, and finance to compound efficiency and accelerate growth."
+          },
+          {
+            "num": "03",
+            "title": "In diligence",
+            "desc": "We assess where AI creates advantage, and where it creates risk, before we invest, and build the plan from day one."
+          }
+        ],
+        "ledes": [
+          "We see opportunity across the entire technology stack, and we put AI to work throughout the organization, in the products our companies build and in the way our teams operate, to drive durable, measurable results."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "AI Committee",
+        "heading": "A dedicated team setting the agenda",
+        "items": [
+          {
+            "kicker": "Head of AI",
+            "title": "Venu Vasudevan"
+          },
+          {
+            "kicker": "Principal",
+            "title": "Geoff Vasudevan"
+          },
+          {
+            "kicker": "Principal",
+            "title": "Connor Martin"
+          },
+          {
+            "kicker": "Chief of Staff",
+            "title": "Estelle Spanneut"
+          }
+        ],
+        "ledes": [
+          "A cross-functional committee drives how we evaluate AI in diligence and deploy it across the portfolio, led by our Head of AI."
+        ]
+      },
+      {
+        "kind": "section",
+        "eyebrow": "Center of Excellence",
+        "heading": "An AI Center of Excellence in Romania",
+        "items": [
+          {
+            "title": "Build once",
+            "desc": "A central team develops reusable AI building blocks, agents, and playbooks, not one-off projects."
+          },
+          {
+            "title": "Deploy across the portfolio",
+            "desc": "Proven capabilities roll out to each company, so every business starts ahead instead of from scratch."
+          },
+          {
+            "title": "Compound the advantage",
+            "desc": "Every deployment sharpens the playbook, and each new company benefits from everything built before it."
+          }
+        ],
+        "ledes": [
+          "We have established a dedicated AI Center of Excellence in Romania that works like a factory for the whole portfolio: we build AI capabilities once and deploy them across our companies, rather than rebuilding them one business at a time. It extends TELEO's established talent base in the region into a shared, repeatable engine every company can draw on."
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Platforms, add-ons, and realized investments across TELEO Capital's four sectors.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Portfolio",
+        "heading": "Where we partner",
+        "ledes": [
+          "Platforms, add-ons, and realized investments across our four sectors. Select a company for detail."
+        ]
+      },
+      {
+        "kind": "section",
+        "items": [
+          {
+            "kicker": "Case Studies",
+            "title": "A closer look at how we partner and create value",
+            "href": "/case-studies"
+          }
+        ],
+        "ctas": [
+          {
+            "label": "View Case Studies",
+            "href": "/case-studies"
+          }
+        ]
+      }
+    ]
+  },
+  "case-studies": {
+    "title": "Case Studies",
+    "description": "Select investments: the transaction, the merits, and the value created alongside management.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Portfolio",
+        "heading": "Case Studies",
+        "ledes": [
+          "Select investments: the transaction, the merits, and the value created alongside management."
+        ]
+      },
+      {
+        "kind": "section",
+        "notes": [
+          "Past performance is not indicative of future results. The case studies shown are provided for illustrative purposes only and do not represent all investments made by TELEO Capital; they may not be representative of the firm's overall portfolio or results, and a complete list of investments is available upon request. There can be no assurance that future investments will achieve comparable results or be profitable. Nothing herein constitutes an offer to sell or a solicitation of an offer to buy any security."
+        ]
+      }
+    ]
+  },
+  "team": {
+    "title": "Team",
+    "description": "A dedicated operating team that has run global software and technology businesses.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Investors & Operators",
+        "heading": "A dedicated operating team that has run global software and technology businesses"
+      }
+    ]
+  },
+  "news": {
+    "title": "News & Updates",
+    "description": "Press releases and firm updates from TELEO Capital and its portfolio companies.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "News & Updates",
+        "heading": "Press releases & firm updates",
+        "ledes": [
+          "The latest from TELEO Capital and its portfolio companies."
+        ]
+      },
+      {
+        "kind": "section",
+        "notes": [
+          "No items match these filters."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Connect with TELEO Capital. Whether you are a corporate seller, an intermediary, or an investor, we would like to hear from you.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Contact Us",
+        "heading": "Connect with TELEO",
+        "ledes": [
+          "Whether you are a corporate seller, an intermediary, or an investor, we would like to hear from you."
+        ]
+      },
+      {
+        "kind": "section",
+        "heading": "Send us a message",
+        "ctas": [
+          {
+            "label": "deals@teleocapital.com",
+            "href": "mailto:cmartin@teleocapital.com"
+          },
+          {
+            "label": "deals@teleocapital.com",
+            "href": "mailto:cmartin@teleocapital.com"
+          },
+          {
+            "label": "investors@teleocapital.com",
+            "href": "mailto:eearl@teleocapital.com"
+          }
+        ]
+      },
+      {
+        "kind": "band",
+        "eyebrow": "Boise & Los Angeles",
+        "heading": "Two offices, one team",
+        "ledes": [
+          "We respond quickly and with certainty, typically within one business day."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "How TELEO Capital Management, LLC collects, uses, and protects information submitted through teleocapital.com.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Legal",
+        "heading": "Privacy Policy",
+        "ledes": [
+          "How we handle information submitted through this website."
+        ]
+      },
+      {
+        "kind": "section",
+        "ctas": [
+          {
+            "label": "cmartin@teleocapital.com",
+            "href": "mailto:cmartin@teleocapital.com"
+          }
+        ],
+        "prose": [
+          {
+            "t": "p",
+            "text": "Effective date: August 10, 2026"
+          },
+          {
+            "t": "p",
+            "text": "This Privacy Policy explains how TELEO Capital Management, LLC (\"TELEO,\" \"we,\" \"us,\" or \"our\") collects, uses, and protects information in connection with teleocapital.com (the \"Site\"). By using the Site, you agree to the practices described below."
+          },
+          {
+            "t": "h",
+            "text": "Information We Collect"
+          },
+          {
+            "t": "p",
+            "text": "Information you provide. When you contact us or submit a form, we may collect your name, email address, company, and any information you include in your message."
+          },
+          {
+            "t": "p",
+            "text": "Information collected automatically. Like most websites, we may collect standard technical information such as your browser type, device, pages visited, and referring source, including through cookies and similar technologies."
+          },
+          {
+            "t": "h",
+            "text": "How We Use Information"
+          },
+          {
+            "t": "p",
+            "text": "We use the information we collect to respond to inquiries, evaluate potential transactions and relationships, operate and improve the Site, and comply with legal and regulatory obligations. We do not sell your personal information."
+          },
+          {
+            "t": "h",
+            "text": "Cookies & Analytics"
+          },
+          {
+            "t": "p",
+            "text": "We may use cookies and third-party analytics services (such as Google Analytics) to understand how visitors use the Site. You can control cookies through your browser settings; disabling them may affect certain features."
+          },
+          {
+            "t": "h",
+            "text": "How We Share Information"
+          },
+          {
+            "t": "p",
+            "text": "We may share information with service providers who support our operations, with professional advisors, and where required by law or to protect our legal rights. We do not share your information with third parties for their own marketing purposes."
+          },
+          {
+            "t": "h",
+            "text": "Data Security"
+          },
+          {
+            "t": "p",
+            "text": "We maintain reasonable administrative, technical, and physical safeguards designed to protect the information we collect. No method of transmission or storage is completely secure, however, and we cannot guarantee absolute security."
+          },
+          {
+            "t": "h",
+            "text": "Your Choices & Rights"
+          },
+          {
+            "t": "p",
+            "text": "Depending on your location, you may have the right to access, correct, or request deletion of your personal information. To make a request, contact us using the details below."
+          },
+          {
+            "t": "h",
+            "text": "Third-Party Links"
+          },
+          {
+            "t": "p",
+            "text": "The Site may link to third-party websites, including our investor portal. We are not responsible for the privacy practices of those sites, and we encourage you to review their policies."
+          },
+          {
+            "t": "h",
+            "text": "Changes to This Policy"
+          },
+          {
+            "t": "p",
+            "text": "We may update this Privacy Policy from time to time. Changes will be posted on this page with a revised effective date."
+          },
+          {
+            "t": "h",
+            "text": "Contact Us"
+          },
+          {
+            "t": "p",
+            "text": "If you have questions about this Privacy Policy, contact us at"
+          },
+          {
+            "t": "p",
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "The terms governing use of teleocapital.com, including important disclaimers regarding investment advice and offers.",
+    "sections": [
+      {
+        "kind": "hero",
+        "eyebrow": "Legal",
+        "heading": "Terms of Use",
+        "ledes": [
+          "The terms that govern your use of this website."
+        ]
+      },
+      {
+        "kind": "section",
+        "ctas": [
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy"
+          },
+          {
+            "label": "cmartin@teleocapital.com",
+            "href": "mailto:cmartin@teleocapital.com"
+          }
+        ],
+        "prose": [
+          {
+            "t": "p",
+            "text": "Effective date: August 21, 2026"
+          },
+          {
+            "t": "p",
+            "text": "These Terms of Use (\"Terms\") govern your access to and use of teleocapital.com (the \"Site\"), operated by TELEO Capital Management, LLC (\"TELEO,\" \"we,\" \"us,\" or \"our\"). By accessing or using the Site, you agree to these Terms. If you do not agree, please do not use the Site."
+          },
+          {
+            "t": "h",
+            "text": "No Offer or Solicitation"
+          },
+          {
+            "t": "p",
+            "text": "The Site is for general informational purposes only. Nothing on the Site constitutes an offer to sell, or a solicitation of an offer to buy, any security, fund interest, or other financial instrument, nor shall there be any sale of securities in any jurisdiction in which such an offer or solicitation would be unlawful. Any offer is made only through definitive offering documents and to eligible investors."
+          },
+          {
+            "t": "h",
+            "text": "No Investment, Legal, or Tax Advice"
+          },
+          {
+            "t": "p",
+            "text": "Content on the Site does not constitute investment, legal, accounting, or tax advice, or a recommendation regarding any investment strategy or transaction. You should consult your own advisors before making any decision. Past performance is not indicative of future results, and any references to prior investments are for illustrative purposes only."
+          },
+          {
+            "t": "h",
+            "text": "Forward-Looking Statements"
+          },
+          {
+            "t": "p",
+            "text": "The Site may contain forward-looking statements that reflect our current expectations. These statements involve risks and uncertainties, and actual results may differ materially. We undertake no obligation to update any forward-looking statement."
+          },
+          {
+            "t": "h",
+            "text": "Use of the Site"
+          },
+          {
+            "t": "p",
+            "text": "You agree to use the Site only for lawful purposes and in a manner that does not infringe the rights of, or restrict the use of the Site by, any third party. You may not attempt to gain unauthorized access to any portion of the Site, its servers, or any connected systems."
+          },
+          {
+            "t": "h",
+            "text": "Intellectual Property"
+          },
+          {
+            "t": "p",
+            "text": "The Site and its content, including text, graphics, logos, and the TELEO name and marks, are owned by or licensed to TELEO and are protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our prior written consent."
+          },
+          {
+            "t": "h",
+            "text": "Privacy & Cookies"
+          },
+          {
+            "t": "p",
+            "text": "Your use of the Site is also governed by our"
+          },
+          {
+            "t": "p",
+            "text": ", which explains how we collect and use information, including through cookies and analytics such as Google Analytics. By using the Site, you consent to those practices as described."
+          },
+          {
+            "t": "h",
+            "text": "Third-Party Links"
+          },
+          {
+            "t": "p",
+            "text": "The Site may link to third-party websites, including our investor portal. We are not responsible for the content, policies, or practices of those sites and provide such links for convenience only."
+          },
+          {
+            "t": "h",
+            "text": "Disclaimers"
+          },
+          {
+            "t": "p",
+            "text": "The Site is provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Site will be uninterrupted, error-free, or free of harmful components."
+          },
+          {
+            "t": "h",
+            "text": "Limitation of Liability"
+          },
+          {
+            "t": "p",
+            "text": "To the fullest extent permitted by law, TELEO and its affiliates will not be liable for any indirect, incidental, consequential, or punitive damages arising out of or relating to your use of, or inability to use, the Site."
+          },
+          {
+            "t": "h",
+            "text": "Governing Law"
+          },
+          {
+            "t": "p",
+            "text": "These Terms are governed by the laws of the State of Idaho, without regard to its conflict-of-laws principles. Any dispute arising under these Terms will be subject to the exclusive jurisdiction of the state and federal courts located in Idaho."
+          },
+          {
+            "t": "h",
+            "text": "Changes to These Terms"
+          },
+          {
+            "t": "p",
+            "text": "We may update these Terms from time to time. Changes will be posted on this page with a revised effective date, and your continued use of the Site constitutes acceptance of the updated Terms."
+          },
+          {
+            "t": "h",
+            "text": "Contact Us"
+          },
+          {
+            "t": "p",
+            "text": "If you have questions about these Terms, contact us at"
+          },
+          {
+            "t": "p",
+            "text": "."
+          }
+        ]
+      }
+    ]
+  }
+}
