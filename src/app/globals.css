@@ -292,3 +292,8 @@ a.card:hover::after, a.card:focus-visible::after, button.card:hover::after, butt
   .metope .l-back, .metope .l-mid, .metope .l-front { transform: none !important; }
   .site-arc circle.arc-live { stroke-dashoffset: 0; }
 }
+
+
+/* page hero entrance: pure CSS so the headline paints without waiting for JavaScript */
+.hero-in { animation: hero-in 1.1s var(--ease-film) both; }
+@keyframes hero-in { from { opacity: 0.01; transform: translate3d(0, 22px, 0); } to { opacity: 1; transform: none; } }

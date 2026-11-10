@@ -62,7 +62,7 @@ export default function PortfolioGrid({ companies, visuals }: { companies: Card[
                   <span>{c.status}</span>
                   <span>{c.year}</span>
                 </p>
-                <h3 className="mt-3 font-serif text-[1.9rem] leading-none transition-colors duration-300 group-hover:text-bronze-hi">{c.name}</h3>
+                <h2 className="mt-3 font-serif text-[1.9rem] leading-none transition-colors duration-300 group-hover:text-bronze-hi">{c.name}</h2>
                 <p className="mt-3 text-[0.95rem] leading-relaxed text-marble/75">{c.line}</p>
                 <p className="mt-auto pt-5 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-vein">
                   {c.parentName ? `Add-on to ${c.parentName}` : c.sector}

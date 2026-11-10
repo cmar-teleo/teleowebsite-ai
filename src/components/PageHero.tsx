@@ -142,20 +142,20 @@ export default function PageHero({
       <div className="vignette pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="wrap relative">
         {eyebrow && (
-          <p className="eyebrow" data-reveal>
+          <p className="eyebrow hero-in">
             {eyebrow}
           </p>
         )}
-        <h1 className="display mt-6 max-w-[18ch]" data-reveal="mask">
+        <h1 className="display hero-in mt-6 max-w-[52rem]" style={{ animationDelay: '80ms' }}>
           {heading}
         </h1>
         {ledes.map((l, i) => (
-          <p key={i} className={`lede max-w-2xl ${i === 0 ? 'mt-8' : 'mt-4'}`} data-reveal style={{ ['--d' as string]: i + 2 }}>
+          <p key={i} className={`lede hero-in max-w-2xl ${i === 0 ? 'mt-8' : 'mt-4'}`} style={{ animationDelay: `${200 + i * 90}ms` }}>
             {l}
           </p>
         ))}
         {children && (
-          <div className="mt-10 flex flex-wrap gap-4" data-reveal style={{ ['--d' as string]: 4 }}>
+          <div className="hero-in mt-10 flex flex-wrap gap-4" style={{ animationDelay: '380ms' }}>
             {children}
           </div>
         )}

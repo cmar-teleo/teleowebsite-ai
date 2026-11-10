@@ -46,9 +46,15 @@ export default function HomeHero() {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduced) return
 
-    // request the 3D bundle once the page is idle
-    const idle = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback
-    const id = idle ? idle(() => setMount3d(true), { timeout: 1200 }) : window.setTimeout(() => setMount3d(true), 400)
+    // Request the 3D bundle on the visitor's first interaction (or after a long idle), never during
+    // page load: the SVG poster is the first frame, so nothing is lost and the main thread stays free.
+    const events = ['pointermove', 'pointerdown', 'touchstart', 'wheel', 'keydown', 'scroll'] as const
+    const start = () => {
+      setMount3d(true)
+      events.forEach((e) => window.removeEventListener(e, start))
+    }
+    events.forEach((e) => window.addEventListener(e, start, { passive: true, once: true }))
+    const id = window.setTimeout(start, 9000)
 
     const apply = (p: number) => {
       progress.current = p
@@ -74,8 +80,8 @@ export default function HomeHero() {
     return () => {
       st.kill()
       io.disconnect()
-      if (idle) (window as unknown as { cancelIdleCallback: (n: number) => void }).cancelIdleCallback(id)
-      else clearTimeout(id)
+      clearTimeout(id)
+      events.forEach((e) => window.removeEventListener(e, start))
     }
   }, [])
 
@@ -101,7 +107,7 @@ export default function HomeHero() {
         <div ref={setLayer(0)} className="absolute inset-x-0 bottom-0 pb-[clamp(4.5rem,11vh,8rem)]">
           <div className="wrap">
             <p className="eyebrow">Operators with Capital</p>
-            <h1 className="display mt-6 max-w-[15ch] md:max-w-[17ch]">
+            <h1 className="display mt-6 max-w-[46rem]">
               We acquire and build complex <em className="text-bronze-hi">software and technology</em> businesses
             </h1>
             <p className="lede mt-7 max-w-xl">An operator-led private equity firm with particular depth in corporate carve-outs.</p>
