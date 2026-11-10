@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <span className="inline-block bg-white px-4 py-3"><Logo height={56} /></span>
+            <Logo height={64} white />
             <div className="mt-6">
               <a href={firm.linkedin} target="_blank" rel="noopener noreferrer" className="link-arrow">
                 LinkedIn

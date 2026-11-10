@@ -24,7 +24,7 @@ Deploy the `out/` folder to Cloudflare Pages or any static host. Build command `
 
 | Rule | Where |
 |---|---|
-| The logo is the brand file `public/brand/teleologo1.png`, unmodified. It always sits on a light ground: the nav is a white bar over the dark site, and the footer and share images set it on a white plate | `src/components/Logo.tsx`, `Nav.tsx`, `Footer.tsx` |
+| The logo is the brand file `public/brand/teleologo1.png`, unmodified. The nav is a white bar over the dark site and share images set it on a white plate. The dark footer uses an all-white version on a transparent background (`teleologo1-white.png`, made by `scripts/make-white-logo.cjs`) | `src/components/Logo.tsx`, `Nav.tsx`, `Footer.tsx` |
 | TELEO orange `#f96015`, used sparingly: the active nav underline, the scroll progress rule, the primary button | `--color-orange` in `src/app/globals.css` |
 | No brass, no cyan. Hairlines and labels are neutral stone and marble | `src/app/globals.css` |
 | Headlines keep the serif and their italic emphasis | `src/app/globals.css` |
